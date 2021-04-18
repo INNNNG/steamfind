@@ -1,0 +1,96 @@
+"find -"
+-dumpvideostream - Dump the game stream as an elementary video file
+-friendsui - 
+-nofriendsui - 
+-no-browser - unconditionally disables CEF
+-opendevtools - Open Chrome devtools on launch
+-openoverlaydevtools - Open Chrome devtools on creation of any overlay browsers
+-opengl - Use the OpenGL render for the UI
+-fullscreenopengl - Use the full screen OpenGL render for the UI
+-tenfoot - Start in Steam Big Picture mode
+-bigpicture - Start in Steam Big Picture mode
+-nobigpicture - Start in regular mode (force Big Picture mode off)
+-steamos - 
+-clientui - 
+-vronly - 
+-accesscode - 
+-flushconfig - 
+-silent - Silent startup mode (tray mode only)
+-fulldesktopres - Run tenfoot in full desktop resolution rather than 1080p, overrides -720p as well.
+-windowed - Run Steam tenfoot mode in a window rather than a fullscreen borderless window
+-720p - Run tenfoot in 720p rather than 1080p
+-480p - Run tenfoot in 480p rather than 1080p
+-language - Set Steam client UI language
+-testssa - force display of SSA
+-forceservice - Run Steam Client Service even if Steam has admin rights
+-community - Set the community URL
+-store - Set the store URL
+-login - Automatically logs in user
+-forcecontrollerappid - Force a Specific AppID for Steam Controller Config - Prevents context/app switching from changing configuration
+-debugbutton - Show debug button in content frame header
+-nointro - Skip intro movie
+-testbutton - Show test button on main menu
+-musiccrawltrack - Add menu to crawl track and print result to console
+-enablealloobesteps - 
+-blefw - 
+-storebeta - 0
+-console - 
+-noconsole - 
+-oldlib - 
+-hidelibmenu - 
+-all_languages - show longest loc string from any language
+-vguimessages - set to see debug vgiui2 messages
+-fs_log - Log file system accesses
+-fs_target - Set target syntax
+-fs_logbins - Log the binaries we load during operation
+-vguifocus - Print out details of which panel has keyboard focus
+-ccsyntax - Spew details about the localized strings we load
+-pid - Pid that we should be watching for
+-nofasthtml - Disables new fast child hwnd direct in vgui hwnd rendering path
+-linuxfasthtml - Enable fast child html for Linux
+-no-cef-sandbox - disables sandboxing in CEF
+-cef-disable-sandbox - disables sandboxing in CEF
+-disable-winh264 - disables loading winh264.dll
+-disablehighdpi - disables high-DPI support in CEF
+-dev - 
+-cef-verbose-logging - enables verbose logging from CEF
+-enable-keyring - enables CEF usage of the Chromium keyring
+-cef-single-process - runs CEF processes in single process
+-cef-in-process-gpu - runs CEF GPU processing as thread of browser process
+-cef-disable-d3d11 - disable D3D11 usage in CEF
+-cef-full-memory-crash-report - enables full crash dumps
+-cef-disable-breakpad - disables breakpad in crash dumps
+-cef-force-32bit - forces usage of 32-bit steamwebhelper when available
+-cef-winxp - force running the WinXP compatible CEF browser
+-toggle-overlay-html-mode - Disables new faster overlay HTML path (or enables if on a branch it's not on by default for)
+-html-perf-monitor - Draws html perf data
+-no-dwrite - forces CEF to use GDI text even if DWrite support is available
+-voicerelay - Only allow 'relay' connections for voice (testing).
+-log_voice - writes voice chat data to the logs/voice_log.txt file
+-musicdbforcerebuild - Forces a rebuild and recrawl of the music database
+-cafeapplaunch - Launch apps in a cyber cafe context
+-complete_install_via_http - Run installation completion over HTTP by default
+-lognetapi - logs all P2P networking info to log/netapi_log.txt
+-perfectworld - Identifies processes that were launched by the Perfect world launcher
+-tcp - forces connection to Steam backend to be via TCP - deprecated, will be replaced by websockets only for TCP soon
+-udpforce - forces connection to Steam backend to be via UDP - deprecated, won't exist for too long
+-websocket - forces connection to Steam backend to be via WebSocket
+-websocketignorecertissues - says it's ok to ignore cert validation issues if using WebSocket connections, for dev use only
+-disablepartnerlicenses - disable automatically granted partner licenses
+-single_core - Force Steam to run on your primary CPU only
+-skipstreamingdrivers - Skip streaming driver checks
+-noshaders - Disable the shader manager
+-debug_steamapi - enables logging of Steam API functions
+-init_universe - 
+-auto-browser-auth - 
+-no-shared-textures - forces overlay to avoid sharing texture handles with game process
+-nocrashmonitor - 
+-cybercafe - Forces cyber cafe mode for debugging
+-overlaytestmode - Forces overlay testmode mode for debugging
+-vrdisable - Disable VR - never even try to load OpenVR DLLs
+-vrskip - Skip VR initialization entirely no matter who asks for it
+-vrforce - Always perform Hmd status check even if we crashed the last time we tried
+-candidates - Show libjingle candidates for local connection as they are processed
+-newvrchat - 
+-unhidefriendsui - 
+-forcevgui - 
