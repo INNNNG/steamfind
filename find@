@@ -83,6 +83,7 @@ find @
 @csecDurationControlSimulated = "" - Simulate having already played this many seconds of playtime.
 @csecDurationControlSimulatedNonRecent = "" - Simulate having already played this many seconds of playtime today, but not recently.
 @durationControlNightCheck = "1" - Time of day check for duration-control feature. 1 = normal. 2 = force night-time. 0 = disable checks, only enabled for age verified accounts
+@bScreenshotsLegacyCloudUpload = "1" - If set, use the legacy Steam Cloud upload path for screenshot uploads
 @bContentManifestUseProtobufs = "1" - 
 @nContentDeltaChunkAppendChunksAfterProtobufSizeThresholdMB = "33" - 
 @NetConnectionBufferMsgLimit = "1000" - Max # of message that will be buffered into a single zipped packet
