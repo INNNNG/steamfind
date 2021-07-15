@@ -1,4 +1,43 @@
 find @
+@panorama_max_fps = "120.0f" - 
+@panorama_max_overlay_fps = "60.0f" - 
+@panorama_max_oof_overlay_up_fps = "4.0f" - 
+@panorama_reload_animations = "1" - 
+@panorama_debug_overlay_opacity = "0.8" - 
+@panorama_volume_master = "1.000000" - 
+@panorama_volume_ambient = "0.000000" - 
+@panorama_volume_effects = "1.000000" - 
+@panorama_volume_movies = "1.000000" - 
+@panorama_show_fps = "0" - 
+@panorama_clear_frames_on_device_restore = "2" - 
+@panorama_joystick_axis_repeat_interval_start = "0.22" - 
+@panorama_joystick_axis_repeat_interval_end = "0.05" - 
+@panorama_joystick_axis_repeat_curve_time = "1.0" - 
+@panorama_joystick_button_repeat_interval_start = "0.48" - 
+@panorama_joystick_button_repeat_interval_end = "0.10" - 
+@panorama_joystick_button_repeat_curve_time = "1.2" - 
+@panorama_steampad_button_repeat_interval_start = ".7" - 
+@panorama_steampad_button_repeat_interval_end = "0.035" - 
+@panorama_steampad_button_repeat_curve_time = ".5" - 
+@panoram_debug_dead_pad = "0" - 
+@panorama_dragscroll_affordance = "20" - Minimum mouse movement in pixels before a move is treated as a drag scroll
+@panorama_dragscroll_mintime = "0.02" - Minimum time that the mouse button must be down before a move is treated as a drag scroll
+@panorama_dragscroll_velocitymultiplier = "0.5" - Multiplier for flick velocity off of actual measured velocity
+@panorama_dragscroll_affordance_vr = "50" - Minimum mouse movement in pixels before a move is treated as a drag scroll in VR
+@panorama_dragscroll_mintime_vr = "0.05" - Minimum time that the mouse button must be down before a move is treated as a drag scroll in VR
+@panorama_dragscroll_velocitymultiplier_vr = "0.5" - Multiplier for flick velocity off of actual measured velocity
+@panorama_vsync = "1" - 
+@panorama_spew_gpu_memory = "0" - 
+@panorama_spew_layout_invalidates = "0" - 
+@panorama_transition_time_factor = "1.0" - A float representing a scale factor for transitions. 1.0 is normal, 2.0 would be twice as fast as normal, 0.5 half as fast
+@panorama_2d_translate_no_comp_layer = "1" - 
+@panorama_might_scroll_no_comp_layer = "0" - 
+@panorama_box_shadow_no_comp_layer = "0" - 
+@panorama_simple_borders_no_comp_layer = "0" - 
+@panorama_transforms_no_comp_layer = "0" - 
+@panorama_transform_parents_no_layer_for_perspective = "0" - 
+@panorama_use_render_commands = "1" - 
+@panorama_use_client_render_commands = "1" - 
 @sSteamCmdForcePlatformType = "" - Must be one of: [windows | macos | linux | android]
 @sSteamCmdForcePlatformBitness = "" - Must be one of: [32 | 64]
 @GCNameOverride = "" - 
@@ -8,7 +47,10 @@ find @
 @nClientCloudMaxMBParallelDownloads = "64" - 
 @nClientCloudMaxNumParallelDeletes = "10" - 
 @CustomBinaryRequestRetryTimes = "20" - 
-@csecCSRequestProcessorTimeOut = "120"" - 
+@nContentUpdateAutoVerifyEnable = "1" - 0 = disabled; 1 = enabled all clients; 2 = enabled public Beta clients only
+@nContentUpdateAutoVerifyCleanBytesThresholdMB = "256" - How many clean MB must we verify before backing off on auto-verifies
+@nContentUpdateAutoVerifyPostThresholdOdds = "10" - 1 in X chance we auto-verify this update even if you've reached the clean-data threshold
+@csecCSRequestProcessorTimeOut = "300" - 
 @strCSNoCacheHeader = "no-cache" - 
 @bCSForceNoCache = "0" - 
 @nCSJob404ResponseLimit = "100" - 
@@ -83,7 +125,8 @@ find @
 @csecDurationControlSimulated = "" - Simulate having already played this many seconds of playtime.
 @csecDurationControlSimulatedNonRecent = "" - Simulate having already played this many seconds of playtime today, but not recently.
 @durationControlNightCheck = "1" - Time of day check for duration-control feature. 1 = normal. 2 = force night-time. 0 = disable checks, only enabled for age verified accounts
-@bScreenshotsLegacyCloudUpload = "1" - If set, use the legacy Steam Cloud upload path for screenshot uploads
+@bScreenshotsLegacyCloudUpload = "0" - If set, use the legacy Steam Cloud upload path for screenshot uploads
+@nScreenshotSaveMaxWidth = "9999" - 
 @bContentManifestUseProtobufs = "1" - 
 @nContentDeltaChunkAppendChunksAfterProtobufSizeThresholdMB = "33" - 
 @NetConnectionBufferMsgLimit = "1000" - Max # of message that will be buffered into a single zipped packet
@@ -99,6 +142,7 @@ find @
 @metricsEnabledOperations = "CInfluxClient::SendCurrentBatchAsync" - Comma separated list of metrics operations - enable list
 @metricsEnabledCatalogs = "" - Comma separated list of metrics catalogs - enable list.  Inclusion in this list bypasses operation whitelist.  Probably every catalog other than job_metrics should be in here.
 @bMetricsEnabled = "1" - Enabling allows jobs to collect and report metrics through IMetricsReporters.
+@bEnableHTTP2OnAllCHTTPClients = "0" - Enable HTTP/2 on all CHTTPClients automatically for SSL connections
 @bHttpClientRecordHostnameDimension = "0" - Group HTTP metrics by hostname.  Careful, the cardinality of your in-memory map might be large.
 @cNetEncryptionHandshakeWorkMax_HighPri = "8000" - 
 @cNetEncryptionHandshakeWorkMax_MedPri = "4000" - 
