@@ -26,6 +26,29 @@
 -community - Set the community URL
 -store - Set the store URL
 -login - Automatically logs in user
+-dumpvideostream - Dump the game stream as an elementary video file
+-opendevtools - Open Chrome devtools on launch
+-openoverlaydevtools - Open Chrome devtools on creation of any overlay browsers
+-friendsui - 
+-nofriendsui - 
+-no-browser - unconditionally disables CEF
+-opengl - Use the OpenGL render for the UI
+-fullscreenopengl - Use the full screen OpenGL render for the UI
+-steamos - 
+-vronly - 
+-accesscode - 
+-flushconfig - 
+-fulldesktopres - Run tenfoot in full desktop resolution rather than 1080p, overrides -720p as well.
+-windowed - Run Steam tenfoot mode in a window rather than a fullscreen borderless window
+-720p - Run tenfoot in 720p rather than 1080p
+-480p - Run tenfoot in 480p rather than 1080p
+-language - Set Steam client UI language
+-testssa - force display of SSA
+-forceservice - Run Steam Client Service even if Steam has admin rights
+-quicklogin - Set the base used to construct quick login URLs
+-community - Set the community URL
+-store - Set the store URL
+-login - Automatically logs in user
 -forcecontrollerappid - Force a Specific AppID for Steam Controller Config - Prevents context/app switching from changing configuration
 -debugbutton - Show debug button in content frame header
 -nointro - Skip intro movie
@@ -39,6 +62,10 @@
 -oldlib - 
 -hidelibmenu - 
 -all_languages - show longest loc string from any language
+-nobigpicture - Start in regular mode (force Big Picture mode off)
+-silent - Silent startup mode (tray mode only)
+-tenfoot - Start in Steam Big Picture mode
+-bigpicture - Start in Steam Big Picture mode
 -vguimessages - set to see debug vgiui2 messages
 -fs_log - Log file system accesses
 -fs_target - Set target syntax
@@ -50,6 +77,7 @@
 -linuxfasthtml - Enable fast child html for Linux
 -no-cef-sandbox - disables sandboxing in CEF
 -cef-disable-sandbox - disables sandboxing in CEF
+-cef-force-sandbox - force sandboxing in CEF
 -disable-winh264 - disables loading winh264.dll
 -disablehighdpi - disables high-DPI support in CEF
 -dev - 
@@ -61,7 +89,11 @@
 -cef-full-memory-crash-report - enables full crash dumps
 -cef-disable-breakpad - disables breakpad in crash dumps
 -cef-force-32bit - forces usage of 32-bit steamwebhelper when available
+-cef-disable-hang-timeouts - disables GPU and renderer hang timeouts
+-cef-enable-debugging - enables Chromium remote debugging, defaulting to localhost:8080
+-cef-disable-occlusion - disables Chromium window occlusion testing on Windows
 -cef-winxp - force running the WinXP compatible CEF browser
+-clientui - 
 -toggle-overlay-html-mode - Disables new faster overlay HTML path (or enables if on a branch it's not on by default for)
 -html-perf-monitor - Draws html perf data
 -no-dwrite - forces CEF to use GDI text even if DWrite support is available
@@ -82,7 +114,6 @@
 -noshaders - Disable the shader manager
 -debug_steamapi - enables logging of Steam API functions
 -init_universe - 
--auto-browser-auth - 
 -no-shared-textures - forces overlay to avoid sharing texture handles with game process
 -nocrashmonitor - 
 -cybercafe - Forces cyber cafe mode for debugging
@@ -94,3 +125,7 @@
 -newvrchat - 
 -unhidefriendsui - 
 -forcevgui - 
+-webplatform - Used to test web requests as a different OS
+-gl - Use the SDL/OpenGL rendering pipeline
+-find_unlocalized - 
+-disabled_shared_html_texture - 
