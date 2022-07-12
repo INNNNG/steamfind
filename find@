@@ -1,43 +1,4 @@
-find @
-@panorama_max_fps = "120.0f" - 
-@panorama_max_overlay_fps = "60.0f" - 
-@panorama_max_oof_overlay_up_fps = "4.0f" - 
-@panorama_reload_animations = "1" - 
-@panorama_debug_overlay_opacity = "0.8" - 
-@panorama_volume_master = "1.000000" - 
-@panorama_volume_ambient = "0.000000" - 
-@panorama_volume_effects = "1.000000" - 
-@panorama_volume_movies = "1.000000" - 
-@panorama_show_fps = "0" - 
-@panorama_clear_frames_on_device_restore = "2" - 
-@panorama_joystick_axis_repeat_interval_start = "0.22" - 
-@panorama_joystick_axis_repeat_interval_end = "0.05" - 
-@panorama_joystick_axis_repeat_curve_time = "1.0" - 
-@panorama_joystick_button_repeat_interval_start = "0.48" - 
-@panorama_joystick_button_repeat_interval_end = "0.10" - 
-@panorama_joystick_button_repeat_curve_time = "1.2" - 
-@panorama_steampad_button_repeat_interval_start = ".7" - 
-@panorama_steampad_button_repeat_interval_end = "0.035" - 
-@panorama_steampad_button_repeat_curve_time = ".5" - 
-@panoram_debug_dead_pad = "0" - 
-@panorama_dragscroll_affordance = "20" - Minimum mouse movement in pixels before a move is treated as a drag scroll
-@panorama_dragscroll_mintime = "0.02" - Minimum time that the mouse button must be down before a move is treated as a drag scroll
-@panorama_dragscroll_velocitymultiplier = "0.5" - Multiplier for flick velocity off of actual measured velocity
-@panorama_dragscroll_affordance_vr = "50" - Minimum mouse movement in pixels before a move is treated as a drag scroll in VR
-@panorama_dragscroll_mintime_vr = "0.05" - Minimum time that the mouse button must be down before a move is treated as a drag scroll in VR
-@panorama_dragscroll_velocitymultiplier_vr = "0.5" - Multiplier for flick velocity off of actual measured velocity
-@panorama_vsync = "1" - 
-@panorama_spew_gpu_memory = "0" - 
-@panorama_spew_layout_invalidates = "0" - 
-@panorama_transition_time_factor = "1.0" - A float representing a scale factor for transitions. 1.0 is normal, 2.0 would be twice as fast as normal, 0.5 half as fast
-@panorama_2d_translate_no_comp_layer = "1" - 
-@panorama_might_scroll_no_comp_layer = "0" - 
-@panorama_box_shadow_no_comp_layer = "0" - 
-@panorama_simple_borders_no_comp_layer = "0" - 
-@panorama_transforms_no_comp_layer = "0" - 
-@panorama_transform_parents_no_layer_for_perspective = "0" - 
-@panorama_use_render_commands = "1" - 
-@panorama_use_client_render_commands = "1" - 
+] find @
 @sSteamCmdForcePlatformType = "" - Must be one of: [windows | macos | linux | android]
 @sSteamCmdForcePlatformBitness = "" - Must be one of: [32 | 64]
 @GCNameOverride = "" - 
@@ -46,18 +7,22 @@ find @
 @nClientCloudMaxNumParallelDownloads = "10" - 
 @nClientCloudMaxMBParallelDownloads = "64" - 
 @nClientCloudMaxNumParallelDeletes = "10" - 
+@nCloudClientUseGetAppFileChangelist = "1" - Should the client use the new GetAppFileChangelist API - 0 = no, 1 = yes, 2 = beta clients
 @CustomBinaryRequestRetryTimes = "20" - 
 @nContentUpdateAutoVerifyEnable = "1" - 0 = disabled; 1 = enabled all clients; 2 = enabled public Beta clients only
-@nContentUpdateAutoVerifyCleanBytesThresholdMB = "256" - How many clean MB must we verify before backing off on auto-verifies
+@nContentUpdateAutoVerifyCleanBytesThresholdMB = "2048" - How many clean MB must we verify before backing off on auto-verifies
 @nContentUpdateAutoVerifyPostThresholdOdds = "10" - 1 in X chance we auto-verify this update even if you've reached the clean-data threshold
+@nClientQueryCMDirectoryBeforeConnect = "1" - Use CMDirectory webapi to get fresh CM list on connect - 0=disabled, 1=enabled, 2=main/dev/beta clients only
+@nClientCMDirectoryResultLoadPercentDither = "10" - Dither to apply to CM server loads received by CMDirectory query
 @csecCSRequestProcessorTimeOut = "300" - 
 @strCSNoCacheHeader = "no-cache" - 
 @bCSForceNoCache = "0" - 
 @nCSJob404ResponseLimit = "100" - 
+@nCSJob5xyResponseLimit = "10" - 
 @bLANPeerConnectionTimeoutSec = "5" - 
-@DepotBuilderNumHTTPSocketsToMDS = "36" - 
+@DepotBuilderNumHTTPSocketsToMDS = "48" - 
 @DepotBuilderParallelUploadChunks = "6" - 
-@DepotBuilderMaxParallelUploadChunks = "72" - 
+@DepotBuilderMaxParallelUploadChunks = "96" - 
 @DepotBuilderProgressTimeout = "1000" - 
 @DepotBuilderEnableVZd = "1" - 
 @DepotBuilderVZdMinRatio = "0.4" - 
@@ -74,7 +39,7 @@ find @
 @cMaxInitialDownloadSources = "-1" - 
 @cSecUploadDownloadRates = "300" - 
 @LocalContentServer = "" - 
-@ForceContentServerID = "" - 
+@ForceContentServer = "" - 
 @CSInterfaceProxyUsername = "" - 
 @CSInterfaceProxyPassword = "" - 
 @cCSClientMaxNumSocketsPerHost = "8" - 
@@ -116,6 +81,7 @@ find @
 @bSiteLicenseServer = "0" - 
 @bEnableMovieRecording = "0" - 
 @bUseWebMicrotxnPathInSteamClient = "1" - 
+@nLegalDictionaryUpdateRateInSeconds = "600" - 
 @bEnableOfflineLogonTicket = "1" - If true, an offline logon ticket will be requested during logon if none is cached
 @bRequireOfflineLogonTicket = "1" - If true, a valid offline logon ticket is required when logging in in offline or no connection mode
 @nParentalSettingsLogLevel = "4" - Control the amount of spew written to the parental log file
@@ -125,6 +91,10 @@ find @
 @csecDurationControlSimulated = "" - Simulate having already played this many seconds of playtime.
 @csecDurationControlSimulatedNonRecent = "" - Simulate having already played this many seconds of playtime today, but not recently.
 @durationControlNightCheck = "1" - Time of day check for duration-control feature. 1 = normal. 2 = force night-time. 0 = disable checks, only enabled for age verified accounts
+@nRoamingConfigReconnectCloudSyncWindowSec = "7200" - 
+@test_nCloudForceSyncFailureAppID = "0" - Set this to a non-zero App ID to test cloud sync failure. The next sync request will fail.
+@test_bCloudForceSyncConflict = "0" - If @test_nCloudForceSyncFailureAppID is set, then set this so that the failure case is 'file conflict' instead of generic failure
+@cloud_testdynamicsyncapp = "0" - 
 @bScreenshotsLegacyCloudUpload = "0" - If set, use the legacy Steam Cloud upload path for screenshot uploads
 @nScreenshotSaveMaxWidth = "9999" - 
 @bContentManifestUseProtobufs = "1" - 
@@ -135,6 +105,10 @@ find @
 @bDepotBuilderReadBufferSizeKB = "8192" - 
 @bDepotBuilderUnbufferedReads = "1" - 
 @cDepotBuilderFileChunkingThreads = "4" - 
+@nHTPPServerLogLevelAccessLine200 = "3" - Log level to use for one-line access-log-style for each http server request returning 200
+@nHTPPServerLogLevelAccessLineNon200 = "2" - Log level to use for one-line access-log-style for each http server request that returns != 200
+@nHTPPServerLogLevelDetails200 = "4" - Log level to use for full details of any http server request returning 200.  This will probably fill up the log if you leave it on.
+@nHTPPServerLogLevelDetailsNon200 = "4" - Log level to use for full details of any http server request returning != 200
 @bEnforceValidEmailDomains = "1" - Enable valid email domains in BIsValidEmailAddress
 @metricsLegacyJobMetrics = "CInfluxClient::SendCurrentBatchAsync,UpdateAppJobReport,perf,ExternalStorageTransferReport,ChatRoom.RelaySendChatMessage#1,DownloadRates,DownloadRatesPerServer,AppBranchUpdateStats,Trust.FullAccountUpdate#1,Trust.OnAccountChanged#1,Trust.OnAccountLabeled#1,Trust.OnAccountLicenseAdded#1,PlayerStatsVOD,PlayerStatsBroadcast,CurrentPlayers,matchmaking,AppTransfers,DownloadRatesISP,DownloadRatesISPPerServer,ExternalTransferStats,BroadcastFetchStats,Transaction,DataTransfer,ContentServerStats,SteamPipeCDNWeights,RegionDirectives,BroadcastCDNWeights,China.ListPersonaNames#1,China.RestrictVisibility#1,GetInteractiveRecommendations,PlayerStallReportBroadcast,PlayerStallReportVOD,AddAnnouncementImage,GetIRAppRankForAccounts,email_monitor" - Comma separated list of Operation names that predate preaggregated job metrics.
 @influxBlacklistedTags = "steamid" - Comma separated list of tag names known to cause cardinality problems for Influx.  We drop those tags but emit the others per-metrics.
@@ -163,8 +137,10 @@ find @
 @nSpewThrottleTriggerThreshold = "10" - 
 @nSpewThrottlePeriodMs = "1000" - 
 @bMsgErrorDump = "0" - 
+@cMinimumJobTimeoutsToCheckPerFrame = "100" - 
 @nTCPLargeSendBufSizeMB = "16" - 
 @nIOCPThreadCount = "1" - 
+@nCallerDeadlineHopLatencyMS = "10" - When we send a message expecting a reply from a job with a deadline, set the timeout on the message to [current time remaining in this job] - N ms.  A negative value prevents propagating caller deadlines down the chain
 @bEnableLogTearOff = "1" - 
 @bEnableSpewThrottle = "1" - 
 @panorama_dragscroll_maxflickvelocity_vr = "8000" - Maximum velocity for a drag scroll flick in VR
@@ -175,8 +151,6 @@ find @
 @panorama_html_shared_surface = "1" - 
 @panorama_daisy_wheel = "ABXY" - Daisy wheel input mode: RS | ABXY
 @panorama_debug_movies = "0" - 
-@nCloudDetailsSimulatedFileCount = "0" - 
-@bCloudDetailsEnabled = "0" - 
 @sticky_tooltips = "0" - Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
 @store_beta_mode = "0" - 
 @store_country_code = "" - 

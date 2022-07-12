@@ -1,31 +1,29 @@
 "find -"
--dumpvideostream - Dump the game stream as an elementary video file
--friendsui - 
--nofriendsui - 
--no-browser - unconditionally disables CEF
--opendevtools - Open Chrome devtools on launch
--openoverlaydevtools - Open Chrome devtools on creation of any overlay browsers
--opengl - Use the OpenGL render for the UI
--fullscreenopengl - Use the full screen OpenGL render for the UI
--tenfoot - Start in Steam Big Picture mode
--bigpicture - Start in Steam Big Picture mode
--nobigpicture - Start in regular mode (force Big Picture mode off)
--steamos - 
--clientui - 
--vronly - 
--accesscode - 
--flushconfig - 
--silent - Silent startup mode (tray mode only)
--fulldesktopres - Run tenfoot in full desktop resolution rather than 1080p, overrides -720p as well.
--windowed - Run Steam tenfoot mode in a window rather than a fullscreen borderless window
--720p - Run tenfoot in 720p rather than 1080p
--480p - Run tenfoot in 480p rather than 1080p
--language - Set Steam client UI language
--testssa - force display of SSA
--forceservice - Run Steam Client Service even if Steam has admin rights
--community - Set the community URL
--store - Set the store URL
--login - Automatically logs in user
+nClientBackgroundAutoUpdateTargetHour = "0" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
+nClientBackgroundAutoUpdateTimeSpreadMinutes = "0" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
+@nCloudClientUseGetAppFileChangelist = "1" - Should the client use the new GetAppFileChangelist API - 0 = no, 1 = yes, 2 = beta clients
+@nContentUpdateAutoVerifyCleanBytesThresholdMB = "2048" - How many clean MB must we verify before backing off on auto-verifies
+@nContentUpdateAutoVerifyPostThresholdOdds = "10" - 1 in X chance we auto-verify this update even if you've reached the clean-data threshold
+@nClientQueryCMDirectoryBeforeConnect = "1" - Use CMDirectory webapi to get fresh CM list on connect - 0=disabled, 1=enabled, 2=main/dev/beta clients only
+@nClientDownloadPreferredServerMaxLoad = "85" - Once preferred servers reach this load, we'll continue to use non-preferred servers in the list after them
+@uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
+@uRemoteDiscoveryPortTransmit = "0" - If non-zero, will transmit outgoing broadcasts on this port instead of on the listen port
+@csecDurationControlPeriod = "" - Override default duration-control / anti-indulgence time period. If nonzero, initial playtime threshold is this value in seconds
+@csecDurationControlPeriodToday = "" - Override default duration-control / anti-indulgence time period. If nonzero, per-day playtime threshold is this value in seconds
+@durationControlNightCheck = "1" - Time of day check for duration-control feature. 1 = normal. 2 = force night-time. 0 = disable checks, only enabled for age verified accounts
+@test_nCloudForceSyncFailureAppID = "0" - Set this to a non-zero App ID to test cloud sync failure. The next sync request will fail.
+@nHTPPServerLogLevelAccessLine200 = "3" - Log level to use for one-line access-log-style for each http server request returning 200
+@nHTPPServerLogLevelAccessLineNon200 = "2" - Log level to use for one-line access-log-style for each http server request that returns != 200
+@influxBlacklistedTags = "steamid" - Comma separated list of tag names known to cause cardinality problems for Influx.  We drop those tags but emit the others per-metrics.
+@metricsDisabledOperations = "" - Comma separated list of metrics operations - disable list
+@metricsEnabledOperations = "CInfluxClient::SendCurrentBatchAsync" - Comma separated list of metrics operations - enable list
+@metricsEnabledCatalogs = "" - Comma separated list of metrics catalogs - enable list.  Inclusion in this list bypasses operation whitelist.  Probably every catalog other than job_metrics should be in here.
+@bHttpClientRecordHostnameDimension = "0" - Group HTTP metrics by hostname.  Careful, the cardinality of your in-memory map might be large.
+@nCallerDeadlineHopLatencyMS = "10" - When we send a message expecting a reply from a job with a deadline, set the timeout on the message to [current time remaining in this job] - N ms.  A negative value prevents propagating caller deadlines down the chain
+@panorama_suggestions_view = "0" - 0 - default, 1 - no games or friends, 2 - just games no friends, 3 - some games and friends, 4 - some  friends no games
+app_license_request - <AppID> - Requests a free licenses for this app if not already owned.
+cloud_sync_up - <appid> Manually triggers after-game cloud sync for the given app.
+cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given app.
 -dumpvideostream - Dump the game stream as an elementary video file
 -opendevtools - Open Chrome devtools on launch
 -openoverlaydevtools - Open Chrome devtools on creation of any overlay browsers
@@ -45,9 +43,13 @@
 -language - Set Steam client UI language
 -testssa - force display of SSA
 -forceservice - Run Steam Client Service even if Steam has admin rights
+-reactlogin - Enable react based login form
+-master_ipc_name_override - 
+-teststoragedata - Enable test storage data
 -quicklogin - Set the base used to construct quick login URLs
 -community - Set the community URL
 -store - Set the store URL
+-help - Set the help/support URL
 -login - Automatically logs in user
 -forcecontrollerappid - Force a Specific AppID for Steam Controller Config - Prevents context/app switching from changing configuration
 -debugbutton - Show debug button in content frame header
@@ -59,13 +61,14 @@
 -storebeta - 0
 -console - 
 -noconsole - 
--oldlib - 
 -hidelibmenu - 
 -all_languages - show longest loc string from any language
 -nobigpicture - Start in regular mode (force Big Picture mode off)
 -silent - Silent startup mode (tray mode only)
 -tenfoot - Start in Steam Big Picture mode
 -bigpicture - Start in Steam Big Picture mode
+-gamepadui - Start in gamepadui mode
+-vgui - Start in vgui mode
 -vguimessages - set to see debug vgiui2 messages
 -fs_log - Log file system accesses
 -fs_target - Set target syntax
@@ -74,9 +77,10 @@
 -ccsyntax - Spew details about the localized strings we load
 -pid - Pid that we should be watching for
 -nofasthtml - Disables new fast child hwnd direct in vgui hwnd rendering path
--linuxfasthtml - Enable fast child html for Linux
+-fasthtml - Enable fast child html for any platform
 -no-cef-sandbox - disables sandboxing in CEF
 -cef-disable-sandbox - disables sandboxing in CEF
+-cef-disable-seccomp-sandbox - disables CEF seccomp-bpf sandbox on Linux
 -cef-force-sandbox - force sandboxing in CEF
 -disable-winh264 - disables loading winh264.dll
 -disablehighdpi - disables high-DPI support in CEF
@@ -92,6 +96,9 @@
 -cef-disable-hang-timeouts - disables GPU and renderer hang timeouts
 -cef-enable-debugging - enables Chromium remote debugging, defaulting to localhost:8080
 -cef-disable-occlusion - disables Chromium window occlusion testing on Windows
+-cef-ignore-certificate-errors - allow self-signed certificates
+-cef-no-linux-angle - Don't use ANGLE for rendering backend on Linux
+-cef-enable-gpu-debugging - Enable GPU debugging in Chromium, costs a glGetError() call after every command
 -cef-winxp - force running the WinXP compatible CEF browser
 -clientui - 
 -toggle-overlay-html-mode - Disables new faster overlay HTML path (or enables if on a branch it's not on by default for)
@@ -109,10 +116,14 @@
 -websocket - forces connection to Steam backend to be via WebSocket
 -websocketignorecertissues - says it's ok to ignore cert validation issues if using WebSocket connections, for dev use only
 -disablepartnerlicenses - disable automatically granted partner licenses
+-forcedeckcontroller - 
 -single_core - Force Steam to run on your primary CPU only
 -skipstreamingdrivers - Skip streaming driver checks
 -noshaders - Disable the shader manager
 -debug_steamapi - enables logging of Steam API functions
+-net_fake_state - Set initial value for net_fake_state
+-net_start_wifi_disabled - Set the initial value for wifi enabled to false.  (Useful when emulating SteamDeck)
+-private_ip_override - 
 -init_universe - 
 -no-shared-textures - forces overlay to avoid sharing texture handles with game process
 -nocrashmonitor - 
@@ -125,7 +136,3 @@
 -newvrchat - 
 -unhidefriendsui - 
 -forcevgui - 
--webplatform - Used to test web requests as a different OS
--gl - Use the SDL/OpenGL rendering pipeline
--find_unlocalized - 
--disabled_shared_html_texture - 

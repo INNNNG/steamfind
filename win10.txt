@@ -1,0 +1,98 @@
+禁用服务uso,wu,禁用缩放,虚拟内存,激活,性能-字体,自动更新保护,net3.5
+"C:\Users\Administrator\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar"
+reg add HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wuauserv /v Start /t REG_DWORD /d 4 /f
+reg add HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UsoSvc /v Start /t REG_DWORD /d 4 /f
+echo.HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\wuauserv [2 8 19]>1.ini
+echo.HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\UsoSvc [2 8 19]>>1.ini
+regini 1.ini
+
+计费中文输入法*
+ 复制到欢迎屏幕
+
+C:\附送工具\激活软件\HEU_KMS_Activator_v22.0.0.exe /nologo /dig
+
+Z:\steamgames\Steam\steam.exe +nClientBackgroundAutoUpdateTimeSpreadMinutes 0 +nClientBackgroundAutoUpdateRecentlyPlayedThresholdHours 0  +nClientBackgroundAutoUpdateLessRecentlyPlayedThresholdHours 0 +nClientBackgroundAutoUpdateNotPlayedTimeSpreadDays 0
+
+win11
+
+系统	通知
+		专注	
+个性化	颜色
+		开始
+辅助	视觉效果
+性能-字体
+隐私
+更新
+默认输入法
+禁用缩放
+设置预览图片
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\EaseOfAccessDialog.exe" /v "Debugger" /t REG_sz /d "EaseOfAccessDialog.exe" /f
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\PPSpeedUp.exe" /v "Debugger" /t REG_sz /d "PPSpeedUp.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\CultBarclt.exe" /v "Debugger" /t REG_sz /d "CultBarclt.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmInstaller.exe" /v "Debugger" /t REG_sz /d "BmInstaller.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmRender.exe" /v "Debugger" /t REG_sz /d "BmRender.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\bmmotor.exe" /v "Debugger" /t REG_sz /d "bmmotor.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\shzh.exe" /v "Debugger" /t REG_sz /d "shzh.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AppUtilHD.exe" /v "Debugger" /t REG_sz /d "AppUtilHD.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\AppUtilHD2.exe" /v "Debugger" /t REG_sz /d "AppUtilHD2.exe" /f
+
+附加工具-隐私保护设置
+启动项	删除vbs
+
+禁用更新
+
+C:\附送工具\激活软件\HEU_KMS_Activator_v22.0.0.exe /nologo /dig
+//激活工具
+	
+
+Reg Add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /ve /t REG_SZ /d "" /F
+//右键菜单
+
+Reg Add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband" /v "NumThumbnails" /t REG_DWORD /d 1 /f
+//关闭任务栏预览
+
+Reg Add "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\Blocked" /v "{e2bf9676-5f8f-435c-97eb-11607a5bedf7}" /f
+//explorer
+
+
+Reg Add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer" /v "AltTabSettings" /t REG_DWORD /d 1 /f
+//经典alt tab
+
+::%windir%\explorer.exe shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9}
+//任务栏角溢出
+
+控制面板\轻松使用\轻松使用设置中心\使键盘更易于使用
+
+第七步 针对顺网
+解决Win10在Pubwin/万象开机卡输入法问题
+客户机系统安装完计费后在输入密码界面默认为中文
+解决方法1：
+
+
+在超级模式状态下，运行regedit 依次打开“[HKEY_CURRENT_USER\Keyboard Layout\Preload]”将字符串“1”数值更改为d0000804，在“[HKEY_CURRENT_USER\Keyboard Layout\Substitutes]”
+下新建字符串名称为“d0000804”数值为：00000409。重启后进入控制面板——区域——管理——复制配置——勾选“欢迎屏幕和系统账户”，重启保存即可！
+
+解决方法2：
+
+在超级模式状态下，导入下方注册表。重启后进入控制面板——区域——管理——复制配置——勾选“欢迎屏幕和系统账户”，重启保存即可！
+
+点击复制代码
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Keyboard Layout\Preload]
+"1"="d0000804"
+
+[HKEY_CURRENT_USER\Keyboard Layout\Substitutes]
+"d0000804"="00000409"
+更改欢迎屏幕和系统账户设置图解：
+
+windows默认的欢迎屏幕和新用户账户设置里的输入语言是根据默认输入法来显示的，
+因此在系统桌面内将输入法改为默认英文状态并不能促使欢迎屏幕默认输入状态为英文。
+而计费客户端锁屏界面又完全继承该设置，因此需要将默认输入法更改为中文简体美式键盘
+
+解决Win10在Pubwin/万象开机卡输入法问题
+
+
+50-eb-f6-3e-14-b3
