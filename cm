@@ -1,2 +1,712 @@
-cm
-203.80.149.104:27018;203.80.149.68:27018;203.80.149.68:27019;203.80.149.67:27018;203.80.149.104:27017;203.80.149.68:27017;180.101.192.249:27019;180.101.192.200:27017;180.101.192.199:27019;203.80.149.67:27019;180.101.192.200:27018;203.80.149.104:27019;180.101.192.199:27017;180.101.192.199:27018;203.80.149.67:27017;180.101.192.249:27018;180.101.192.249:27017;180.101.192.200:27019;153.254.86.163:27018;153.254.86.181:27020;153.254.86.179:27018;153.254.86.181:27021;153.254.86.29:27019;153.254.86.179:27019;153.254.86.163:27017;153.254.86.29:27017;153.254.86.179:27017;153.254.86.181:27019;153.254.86.181:27018;153.254.86.29:27018;153.254.86.163:27019;153.254.86.181:27017;155.133.245.37:27021;155.133.239.51:27025;155.133.239.51:27020;155.133.239.20:27022;155.133.239.20:27019;155.133.239.20:27024;155.133.239.51:27017;155.133.239.51:27024;155.133.239.20:27023;155.133.239.20:27021;155.133.239.51:27019;155.133.245.36:27018;155.133.239.20:27020;155.133.239.51:27018;155.133.239.51:27022;155.133.245.36:27019;155.133.239.20:27025;155.133.239.51:27023;103.10.124.162:27020;155.133.245.37:27020;155.133.245.37:27017;103.10.124.163:27021;155.133.245.36:27021;155.133.245.37:27018;155.133.245.36:27017;155.133.239.51:27021;155.133.245.36:27020;155.133.239.20:27017;103.10.124.162:27018;103.10.124.165:27019;103.10.124.164:27021;103.10.124.162:27021;103.10.124.163:27018;103.10.124.163:27017;155.133.239.20:27018;103.10.124.165:27018;103.10.124.164:27019;103.10.124.162:27019;103.10.124.165:27017;103.10.124.163:27020;103.10.124.165:27021;103.10.124.164:27017;103.10.124.162:27017;155.133.245.37:27019;103.10.124.165:27020;103.10.124.164:27020;103.10.124.164:27018;103.10.124.163:27019
+{
+   "account_id_migration_state": 2,
+   "account_tracker_service_last_update": "13302088869420956",
+   "alternate_error_pages": {
+      "backup": true
+   },
+   "autocomplete": {
+      "retention_policy_last_version": 13
+   },
+   "autofill": {
+      "credit_card_enabled": false,
+      "enabled": false,
+      "orphan_rows_removed": true,
+      "profile_enabled": false
+   },
+   "browser": {
+      "check_default_browser_satrt": false,
+      "clear_lso_data_enabled": true,
+      "clear_old_version_jijian_pref": false,
+      "ees": {
+
+      },
+      "has_seen_welcome_page": false,
+      "pepper_flash_settings_enabled": true,
+      "show_bookmark_menubutton": false,
+      "show_extensions_bar_button": false,
+      "show_home_button": false,
+      "show_restore_webpage_button": false,
+      "show_skin_button": false,
+      "show_tab_manager_button": false,
+      "window_placement": {
+         "bottom": 1024,
+         "left": 896,
+         "maximized": true,
+         "right": 1841,
+         "top": 4,
+         "work_area_bottom": 1040,
+         "work_area_left": 0,
+         "work_area_right": 1920,
+         "work_area_top": 0
+      }
+   },
+   "countryid_at_install": 17230,
+   "data_reduction": {
+      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "502483" ],
+      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "502483" ],
+      "last_update_date": "13302028800000000",
+      "this_week_number": 2740,
+      "this_week_services_downstream_foreground_kb": {
+         "112189210": 1,
+         "137116619": 2,
+         "54845618": 473,
+         "77012883": 10
+      }
+   },
+   "domain_diversity": {
+      "last_reporting_timestamp": "13302088876962779"
+   },
+   "download": {
+      "directory_upgrade": true
+   },
+   "ee": {
+      "browser": {
+         "bd_ws_en": true,
+         "bd_ws_tn": "62095104_26_oem_dg",
+         "favorite_add_status": true,
+         "favorite_list_str": "WyB7DQogICAia2V5IjogImZhdm9yaXRlYmFyciIsDQogICAidGl0bGUiOiAi55m+5bqmIiwNCiAgICJ1cmwiOiAiaHR0cHM6Ly93d3cuYmFpZHUuY29tLz90bj02MjA5NTEwNF8xN19vZW1fZGciDQp9LCB7DQogICAia2V5IjogIiIsDQogICAidGl0bGUiOiAiIiwNCiAgICJ1cmwiOiAiIg0KfSwgew0KICAgImtleSI6ICIiLA0KICAgInRpdGxlIjogIiIsDQogICAidXJsIjogIiINCn0gXQ0K",
+         "history_count": 0
+      }
+   },
+   "extensions": {
+      "alerts": {
+         "initialized": true
+      },
+      "chrome_url_overrides": {
+         "bookmarks": [ {
+            "active": true,
+            "entry": "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html"
+         } ]
+      },
+      "garbagecollect": {
+         "lasttime": "13302088936235486"
+      },
+      "last_chrome_version": "13.5.2022.0",
+      "settings": {
+         "ahfgeienlihckogmohjhadlkjgocpleb": {
+            "active_permissions": {
+               "api": [ "management", "system.display", "system.storage", "webstorePrivate", "system.cpu", "system.memory", "system.network" ],
+               "manifest_permissions": [  ]
+            },
+            "app_launcher_ordinal": "t",
+            "commands": {
+
+            },
+            "content_settings": [  ],
+            "creation_flags": 1,
+            "events": [  ],
+            "from_bookmark": false,
+            "from_webstore": false,
+            "incognito_content_settings": [  ],
+            "incognito_preferences": {
+
+            },
+            "install_time": "13302088869085044",
+            "location": 5,
+            "manifest": {
+               "app": {
+                  "launch": {
+                     "web_url": "https://chrome.google.com/webstore"
+                  },
+                  "urls": [ "https://chrome.google.com/webstore", "https://ext.chrome.360.cn", "https://ext.se.360.cn", "https://skin.chrome.360.cn", "http://chrome.360.cn/themes", "http://warn.se.360.cn" ]
+               },
+               "description": "在这里，您可以找到适用于 Chromium 的精彩应用、游戏、扩展程序和主题背景。",
+               "icons": {
+                  "128": "webstore_icon_128.png",
+                  "16": "webstore_icon_16.png"
+               },
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCtl3tO0osjuzRsf6xtD2SKxPlTfuoy7AWoObysitBPvH5fE1NaAA1/2JkPWkVDhdLBWLaIBPYeXbzlHp3y4Vv/4XG+aN5qFE3z+1RU/NqkzVYHtIpVScf3DjTYtKVL66mzVGijSoAIwbFCC3LpGdaoe6Q1rSRDp76wR6jjFzsYwQIDAQAB",
+               "name": "Chrome 网上应用店",
+               "permissions": [ "account360", "webstorePrivate", "management", "themes", "tabs", "usercenter", "system.cpu", "system.display", "system.memory", "system.network", "system.storage" ],
+               "version": "0.2"
+            },
+            "page_ordinal": "n",
+            "path": "Z:\\系统更新\\都来米浏览器\\123Browser\\13.5.2022.0\\resources\\web_store",
+            "preferences": {
+
+            },
+            "regular_only_preferences": {
+
+            },
+            "state": 1,
+            "was_installed_by_default": false,
+            "was_installed_by_oem": false
+         },
+         "eemcgdkfndhakfknompkggombfjjjeno": {
+            "active_permissions": {
+               "api": [ "bookmarks", "bookmarkManagerPrivate", "management", "metricsPrivate", "systemPrivate", "tabs" ],
+               "explicit_host": [ "chrome://favicon/*", "chrome://resources/*" ],
+               "manifest_permissions": [  ]
+            },
+            "commands": {
+
+            },
+            "content_settings": [  ],
+            "creation_flags": 1,
+            "events": [  ],
+            "from_bookmark": false,
+            "from_webstore": false,
+            "incognito_content_settings": [  ],
+            "incognito_preferences": {
+
+            },
+            "install_time": "13302088869083486",
+            "location": 5,
+            "manifest": {
+               "chrome_url_overrides": {
+                  "bookmarks": "main.html"
+               },
+               "content_security_policy": "object-src 'none'; script-src chrome://resources 'self'",
+               "description": "Bookmark Manager",
+               "icons": {
+
+               },
+               "incognito": "split",
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQcByy+eN9jzazWF/DPn7NW47sW7lgmpk6eKc0BQM18q8hvEM3zNm2n7HkJv/R6fU+X5mtqkDuKvq5skF6qqUF4oEyaleWDFhd1xFwV7JV+/DU7bZ00w2+6gzqsabkerFpoP33ZRIw7OviJenP0c0uWqDWF8EGSyMhB3txqhOtiQIDAQAB",
+               "manifest_version": 2,
+               "name": "Bookmark Manager",
+               "permissions": [ "bookmarks", "management", "bookmarkManagerPrivate", "metricsPrivate", "systemPrivate", "tabs", "chrome://favicon/", "chrome://resources/" ],
+               "version": "0.1"
+            },
+            "path": "Z:\\系统更新\\都来米浏览器\\123Browser\\13.5.2022.0\\resources\\bookmark_manager_360ee",
+            "preferences": {
+
+            },
+            "regular_only_preferences": {
+
+            },
+            "state": 1,
+            "was_installed_by_default": false,
+            "was_installed_by_oem": false
+         },
+         "kmendfapggjehodndflmmgagdbamhnfd": {
+            "active_permissions": {
+               "api": [ "cryptotokenPrivate", "externally_connectable.all_urls", "tabs" ],
+               "explicit_host": [ "http://*/*", "https://*/*" ],
+               "manifest_permissions": [  ]
+            },
+            "commands": {
+
+            },
+            "content_settings": [  ],
+            "creation_flags": 1,
+            "events": [ "runtime.onConnectExternal" ],
+            "from_bookmark": false,
+            "from_webstore": false,
+            "incognito_content_settings": [  ],
+            "incognito_preferences": {
+
+            },
+            "install_time": "13302088869086177",
+            "location": 5,
+            "manifest": {
+               "background": {
+                  "persistent": false,
+                  "scripts": [ "util.js", "b64.js", "cbor.js", "sha256.js", "timer.js", "countdown.js", "countdowntimer.js", "devicestatuscodes.js", "approvedorigins.js", "errorcodes.js", "webrequest.js", "messagetypes.js", "factoryregistry.js", "requesthelper.js", "asn1.js", "enroller.js", "requestqueue.js", "signer.js", "origincheck.js", "textfetcher.js", "appid.js", "watchdog.js", "logging.js", "webrequestsender.js", "window-timer.js", "cryptotokenorigincheck.js", "cryptotokenapprovedorigins.js", "inherits.js", "individualattest.js", "googlecorpindividualattest.js", "cryptotokenbackground.js" ]
+               },
+               "description": "CryptoToken Component Extension",
+               "externally_connectable": {
+                  "ids": [ "fjajfjhkeibgmiggdfehjplbhmfkialk" ],
+                  "matches": [ "https://*/*" ]
+               },
+               "incognito": "split",
+               "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq7zRobvA+AVlvNqkHSSVhh1sEWsHSqz4oR/XptkDe/Cz3+gW9ZGumZ20NCHjaac8j1iiesdigp8B1LJsd/2WWv2Dbnto4f8GrQ5MVphKyQ9WJHwejEHN2K4vzrTcwaXqv5BSTXwxlxS/mXCmXskTfryKTLuYrcHEWK8fCHb+0gvr8b/kvsi75A1aMmb6nUnFJvETmCkOCPNX5CHTdy634Ts/x0fLhRuPlahk63rdf7agxQv5viVjQFk+tbgv6aa9kdSd11Js/RZ9yZjrFgHOBWgP4jTBqud4+HUglrzu8qynFipyNRLCZsaxhm+NItTyNgesxLdxZcwOz56KD1Q4IQIDAQAB",
+               "manifest_version": 2,
+               "name": "CryptoTokenExtension",
+               "permissions": [ "cryptotokenPrivate", "externally_connectable.all_urls", "tabs", "https://*/*", "http://*/*" ],
+               "version": "0.9.74"
+            },
+            "path": "Z:\\系统更新\\都来米浏览器\\123Browser\\13.5.2022.0\\resources\\cryptotoken",
+            "preferences": {
+
+            },
+            "regular_only_preferences": {
+
+            },
+            "state": 1,
+            "was_installed_by_default": false,
+            "was_installed_by_oem": false
+         },
+         "mfehgcgbbipciphmccgaenjidiccnmng": {
+            "active_permissions": {
+               "api": [ "cloudPrintPrivate" ],
+               "manifest_permissions": [  ]
+            },
+            "commands": {
+
+            },
+            "content_settings": [  ],
+            "creation_flags": 1,
+            "events": [  ],
+            "from_bookmark": false,
+            "from_webstore": false,
+            "incognito_content_settings": [  ],
+            "incognito_preferences": {
+
+            },
+            "install_time": "13302088869084468",
+            "location": 5,
+            "manifest": {
+               "app": {
+                  "launch": {
+                     "web_url": "https://www.google.com/cloudprint"
+                  },
+                  "urls": [ "https://www.google.com/cloudprint/enable_chrome_connector" ]
+               },
+               "description": "Cloud Print",
+               "display_in_launcher": false,
+               "icons": {
+
+               },
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqOhnwk4+HXVfGyaNsAQdU/js1Na56diW08oF1MhZiwzSnJsEaeuMN9od9q9N4ZdK3o1xXOSARrYdE+syV7Dl31nf6qz3A6K+D5NHe6sSB9yvYlIiN37jdWdrfxxE0pRYEVYZNTe3bzq3NkcYJlOdt1UPcpJB+isXpAGUKUvt7EQIDAQAB",
+               "name": "Cloud Print",
+               "permissions": [ "cloudPrintPrivate" ],
+               "version": "0.1"
+            },
+            "path": "Z:\\系统更新\\都来米浏览器\\123Browser\\13.5.2022.0\\resources\\cloud_print",
+            "preferences": {
+
+            },
+            "regular_only_preferences": {
+
+            },
+            "state": 1,
+            "was_installed_by_default": false,
+            "was_installed_by_oem": false
+         },
+         "mhjfbmdgcfjbbpaeojofohoefgiehjai": {
+            "active_permissions": {
+               "api": [ "contentSettings", "fileSystem", "fileSystem.write", "metricsPrivate", "resourcesPrivate" ],
+               "explicit_host": [ "chrome://resources/*" ],
+               "manifest_permissions": [  ]
+            },
+            "commands": {
+
+            },
+            "content_settings": [  ],
+            "creation_flags": 1,
+            "events": [  ],
+            "from_bookmark": false,
+            "from_webstore": false,
+            "incognito_content_settings": [  ],
+            "incognito_preferences": {
+
+            },
+            "install_time": "13302088869085535",
+            "location": 5,
+            "manifest": {
+               "content_security_policy": "script-src 'self' 'wasm-eval' blob: filesystem: chrome://resources; object-src * blob: externalfile: file: filesystem: data:; plugin-types application/x-google-chrome-pdf",
+               "description": "",
+               "incognito": "split",
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDN6hM0rsDYGbzQPQfOygqlRtQgKUXMfnSjhIBL7LnReAVBEd7ZmKtyN2qmSasMl4HZpMhVe2rPWVVwBDl6iyNE/Kok6E6v6V3vCLGsOpQAuuNVye/3QxzIldzG/jQAdWZiyXReRVapOhZtLjGfywCvlWq7Sl/e3sbc0vWybSDI2QIDAQAB",
+               "manifest_version": 2,
+               "mime_types": [ "application/pdf" ],
+               "mime_types_handler": "index.html",
+               "name": "Chromium PDF Viewer",
+               "offline_enabled": true,
+               "permissions": [ "chrome://resources/", "contentSettings", "metricsPrivate", "resourcesPrivate", {
+                  "fileSystem": [ "write" ]
+               } ],
+               "version": "1"
+            },
+            "path": "Z:\\系统更新\\都来米浏览器\\123Browser\\13.5.2022.0\\resources\\pdf",
+            "preferences": {
+
+            },
+            "regular_only_preferences": {
+
+            },
+            "state": 1,
+            "was_installed_by_default": false,
+            "was_installed_by_oem": false
+         }
+      },
+      "theme": {
+         "id": "jisu13"
+      }
+   },
+   "gcm": {
+      "product_category_for_subtypes": "cn.360chrome.windows"
+   },
+   "google": {
+      "services": {
+         "signin_scoped_device_id": "62de1626-6ad7-47b5-84be-d622e3e0e341"
+      }
+   },
+   "homepage": "https://hao.360.cn/",
+   "homepage_is_newtabpage": false,
+   "http_original_content_length": "502483",
+   "http_received_content_length": "502483",
+   "kMouseGestureProfile": {
+      "kMGPUserOpenNewTabOrder": 0
+   },
+   "language_model_counters": {
+      "zh-CN": 2
+   },
+   "media": {
+      "device_id_salt": "8C6EE874AE63B5A545CDAD420285351D",
+      "engagement": {
+         "schema_version": 4
+      }
+   },
+   "media_router": {
+      "receiver_id_hash_token": "PVBy/ZCDoxFrTmpqUQiFoLrjZHDjKI67Mv0BaBM2k8QAP4kDfol9KpibwkkJxAPG3ecSciaqIHk0UCsjL5nGng=="
+   },
+   "ntp": {
+      "num_personal_suggestions": 9,
+      "pinned_urls": {
+
+      }
+   },
+   "pinned_tabs": [  ],
+   "plugins": {
+      "npapi_flash_migrated_to_pepper_flash": true,
+      "plugins_list": [  ]
+   },
+   "preset_popup_host_loaded": 3,
+   "previews": {
+      "litepage": {
+         "user-needs-notification": false
+      }
+   },
+   "profile": {
+      "avatar_index": 0,
+      "content_settings": {
+         "exceptions": {
+            "accessibility_events": {
+
+            },
+            "app_banner": {
+
+            },
+            "ar": {
+
+            },
+            "auto_select_certificate": {
+
+            },
+            "automatic_downloads": {
+
+            },
+            "autoplay": {
+
+            },
+            "background_sync": {
+
+            },
+            "bluetooth_chooser_data": {
+
+            },
+            "bluetooth_guard": {
+
+            },
+            "bluetooth_scanning": {
+
+            },
+            "camera_pan_tilt_zoom": {
+
+            },
+            "client_hints": {
+
+            },
+            "clipboard": {
+
+            },
+            "cookies": {
+
+            },
+            "durable_storage": {
+
+            },
+            "file_system_read_guard": {
+
+            },
+            "file_system_write_guard": {
+
+            },
+            "flash_data": {
+
+            },
+            "font_access": {
+
+            },
+            "fullscreen": {
+
+            },
+            "geolocation": {
+
+            },
+            "hid_chooser_data": {
+
+            },
+            "hid_guard": {
+
+            },
+            "images": {
+
+            },
+            "important_site_info": {
+
+            },
+            "insecure_private_network": {
+
+            },
+            "installed_web_app_metadata": {
+
+            },
+            "intent_picker_auto_display": {
+
+            },
+            "javascript": {
+
+            },
+            "legacy_cookie_access": {
+
+            },
+            "media_engagement": {
+               "https://hao.360.com:443,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088889024719",
+                  "model": 0,
+                  "setting": {
+                     "hasHighScore": false,
+                     "lastMediaPlaybackTime": 0.0,
+                     "mediaPlaybacks": 0,
+                     "visits": 1
+                  }
+               },
+               "https://www.baidu.com:443,*": {
+                  "expiration": "0",
+                  "last_modified": "13302089141411637",
+                  "model": 0,
+                  "setting": {
+                     "hasHighScore": false,
+                     "lastMediaPlaybackTime": 0.0,
+                     "mediaPlaybacks": 0,
+                     "visits": 9
+                  }
+               }
+            },
+            "media_stream_camera": {
+
+            },
+            "media_stream_mic": {
+
+            },
+            "midi_sysex": {
+
+            },
+            "mixed_script": {
+
+            },
+            "mouselock": {
+
+            },
+            "nfc": {
+
+            },
+            "notifications": {
+
+            },
+            "password_protection": {
+
+            },
+            "payment_handler": {
+
+            },
+            "permission_autoblocking_data": {
+
+            },
+            "plugins": {
+
+            },
+            "popups": {
+               "[*.]99bill.com,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073594",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]alipay.com,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073632",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]dangdang.com,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073651",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]ipos.10086.cn,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073570",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]netpay.sdo.com,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073480",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]pay.ips.com.cn,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073612",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]pay.soopay.net,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073603",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]payment.chinapnr.com,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073584",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]pingan.com,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073642",
+                  "model": 0,
+                  "setting": 1
+               },
+               "[*.]tenpay.com,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088869073621",
+                  "model": 0,
+                  "setting": 1
+               }
+            },
+            "ppapi_broker": {
+
+            },
+            "protocol_handler": {
+
+            },
+            "safe_browsing_url_check_data": {
+
+            },
+            "sensors": {
+
+            },
+            "serial_chooser_data": {
+
+            },
+            "serial_guard": {
+
+            },
+            "site_engagement": {
+               "https://hao.360.com:443,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088878893788",
+                  "model": 0,
+                  "setting": {
+                     "lastEngagementTime": 1.3302088878893782e+16,
+                     "lastShortcutLaunchTime": 0.0,
+                     "pointsAddedToday": 3.0,
+                     "rawScore": 3.0
+                  }
+               },
+               "https://www.baidu.com:443,*": {
+                  "expiration": "0",
+                  "last_modified": "13302088906663847",
+                  "model": 0,
+                  "setting": {
+                     "lastEngagementTime": 1.3302088906663836e+16,
+                     "lastShortcutLaunchTime": 0.0,
+                     "pointsAddedToday": 6.0,
+                     "rawScore": 6.0
+                  }
+               }
+            },
+            "sound": {
+
+            },
+            "ssl_cert_decisions": {
+
+            },
+            "storage_access": {
+
+            },
+            "subresource_filter": {
+
+            },
+            "subresource_filter_data": {
+
+            },
+            "usb_chooser_data": {
+
+            },
+            "usb_guard": {
+
+            },
+            "vr": {
+
+            },
+            "window_placement": {
+
+            }
+         },
+         "pref_version": 1
+      },
+      "cookie_controls_mode": 0,
+      "creation_time": "13302084693993200",
+      "exit_type": "Normal",
+      "exited_cleanly": true,
+      "icon_version": 6,
+      "last_engagement_time": "13302088906663837",
+      "last_time_obsolete_http_credentials_removed": 1657615366.47798,
+      "managed_user_id": "",
+      "name": "用户1",
+      "password_manager_enabled": false,
+      "password_manager_onboarding_state": 1,
+      "per_host_zoom_levels": {
+
+      },
+      "switch_mode_type": 1,
+      "use_native_zoom_level": true
+   },
+   "safemonLockHomePage": 0,
+   "safemon_lock_search": 0,
+   "se": {
+      "browser": {
+         "close_last_tab_as_hao360": false,
+         "close_last_tab_guide": false,
+         "introx64": {
+            "count": 3,
+            "enable": false,
+            "version": 2
+         },
+         "randnum": 75,
+         "randtime": "13302028800000000",
+         "savepower_extensions": [  ],
+         "se9_import_type": 4,
+         "toolbox_hide_status_bar_state": 1
+      }
+   },
+   "show_360avatar": false,
+   "show_statusworld": false,
+   "tab": {
+      "close_last_tab_close_browser": false,
+      "inactive_tab_hide_close_box": false
+   },
+   "translate": {
+      "enabled": false
+   },
+   "translate_site_blacklist_with_time": {
+
+   },
+   "web_apps": {
+      "system_web_app_failure_count": 0,
+      "system_web_app_last_attempted_language": "zh-CN",
+      "system_web_app_last_attempted_update": "13.5.2022.0",
+      "system_web_app_last_installed_language": "zh-CN",
+      "system_web_app_last_update": "13.5.2022.0",
+      "user_display_mode_cleaned_up": false
+   }
+}
