@@ -1,4 +1,4 @@
-"find -"
+] find -
 nClientBackgroundAutoUpdateTargetHour = "0" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
 nClientBackgroundAutoUpdateTimeSpreadMinutes = "0" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
 @nCloudClientUseGetAppFileChangelist = "1" - Should the client use the new GetAppFileChangelist API - 0 = no, 1 = yes, 2 = beta clients
@@ -44,6 +44,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -testssa - force display of SSA
 -forceservice - Run Steam Client Service even if Steam has admin rights
 -reactlogin - Enable react based login form
+-noreactlogin - Disable react based login form
 -master_ipc_name_override - 
 -teststoragedata - Enable test storage data
 -quicklogin - Set the base used to construct quick login URLs
@@ -86,6 +87,8 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -disablehighdpi - disables high-DPI support in CEF
 -dev - 
 -cef-verbose-logging - enables verbose logging from CEF
+-cef-disable-js-logging - disables console and log file logging of JS console events
+-cef-verbose-js-logging - enables verbose logging of JS console events
 -enable-keyring - enables CEF usage of the Chromium keyring
 -cef-single-process - runs CEF processes in single process
 -cef-in-process-gpu - runs CEF GPU processing as thread of browser process
@@ -99,6 +102,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -cef-ignore-certificate-errors - allow self-signed certificates
 -cef-no-linux-angle - Don't use ANGLE for rendering backend on Linux
 -cef-enable-gpu-debugging - Enable GPU debugging in Chromium, costs a glGetError() call after every command
+-cef-disable-gpu - Disable GPU usage in CEF (force software rendering/compositing)
 -cef-winxp - force running the WinXP compatible CEF browser
 -clientui - 
 -toggle-overlay-html-mode - Disables new faster overlay HTML path (or enables if on a branch it's not on by default for)

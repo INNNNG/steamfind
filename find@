@@ -137,9 +137,13 @@
 @nSpewThrottleTriggerThreshold = "10" - 
 @nSpewThrottlePeriodMs = "1000" - 
 @bMsgErrorDump = "0" - 
+@bEnableNetworkJobsOwnStartList = "1" - 
 @cMinimumJobTimeoutsToCheckPerFrame = "100" - 
+@nJobInteryieldMillisecondsLogThreshold = "100" - 
+@nJobInteryieldMillisecondsAlertThreshold = "200" - 
 @nTCPLargeSendBufSizeMB = "16" - 
 @nIOCPThreadCount = "1" - 
+@bLogMessageToProtobufClass = "1" - We we first discover the protobuf class used for a particular EMsg, log it
 @nCallerDeadlineHopLatencyMS = "10" - When we send a message expecting a reply from a job with a deadline, set the timeout on the message to [current time remaining in this job] - N ms.  A negative value prevents propagating caller deadlines down the chain
 @bEnableLogTearOff = "1" - 
 @bEnableSpewThrottle = "1" - 
