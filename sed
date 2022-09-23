@@ -1,6 +1,4 @@
--e s#${.....COMMUNITY_CDN_URL}#https://community.cloudflare.steamstatic.com/#g 
 -e s#${.....STORE_CDN_URL}#https://media.st.dl.eccdnx.com/#g 
--e s#${.....MEDIA_CDN_COMMUNITY_URL}#https://media.st.dl.eccdnx.com/steamcommunity/public/#g 
 -e s#this.ResolveURL(\"WebAPI\")#\"https://community.steam-api.com/\"#g 
 -e s#.....WEBAPI_BASE_URL,#\"https://community.steam-api.com/\",#g 
 -e s#.....WEBAPI_BASE_URL)#\"https://community.steam-api.com/\")#g 
@@ -11,11 +9,11 @@
 -e s#this.ResolveURL(\"AvatarBaseURL\")#\"https://media.st.dl.eccdnx.com/\"#g 
 -e s#this.ResolveURL(\"CommunityFrontPage\")#\"https://community.cloudflare.steamstatic.com/\"#g 
 -e s#this.ResolveURL(\"CommunityCDN\")#\"https://community.cloudflare.steamstatic.com/\"#g 
--e  s#this.ResolveURL(\"CommunityImages\")#\"https://media.st.dl.eccdnx.com/steamcommunity/public/\"#g 
+-e s#this.ResolveURL(\"CommunityImages\")#\"https://media.st.dl.eccdnx.com/steamcommunity/public/\"#g 
 -e s#this.ResolveURL(\"StoreAppImages\")#\"https://media.st.dl.eccdnx.com/steam/apps/\"#g 
 -e s#.....MEDIA_CDN_URL+\"#\"https://media.st.dl.eccdnx.com/#g 
 -e s#.....MEDIA_CDN_URL+`#`https://media.st.dl.eccdnx.com/#g 
--e s#${....MEDIA_CDN_COMMUNITY_URL}#https://media.st.dl.eccdnx.com/steamcommunity/public/#g 
+-e s#${.....MEDIA_CDN_COMMUNITY_URL}#https://media.st.dl.eccdnx.com/steamcommunity/public/#g 
 -e s#.....MEDIA_CDN_COMMUNITY_URL+\"#\"https://media.st.dl.eccdnx.com/steamcommunity/public/#g 
 -e s#.....MEDIA_CDN_COMMUNITY_URL+`#`https://media.st.dl.eccdnx.com/steamcommunity/public/#g 
 -e s#this.GetCommunityImageURL()+\"#\"https://media.st.dl.eccdnx.com/steamcommunity/public/#g 
@@ -26,6 +24,7 @@
 -e s#.....GetStoreAppImageURL()+\"#\"https://media.st.dl.eccdnx.com/steam/apps#g 
 -e s#this.GetStoreAppImageURL()+`#`https://media.st.dl.eccdnx.com/steam/apps#g 
 -e s#.....GetStoreAppImageURL()+`#`https://media.st.dl.eccdnx.com/steam/apps#g 
+-e s#${.....COMMUNITY_CDN_URL}#https://community.cloudflare.steamstatic.com/#g 
 -e s#.....COMMUNITY_CDN_URL+\"#\"https://community.cloudflare.steamstatic.com/#g 
 -e s#.....STORE_BASE_URL+\"events/ajaxgetpartner#\"https://store.st.dl.eccdnx.com/events/ajaxgetpartner#g 
 -e s#.....STORE_BASE_URL+\"events/ajaxgetadjacent#\"https://store.st.dl.eccdnx.com/events/ajaxgetadjacent#g 
