@@ -1,6 +1,7 @@
+ExecuteSteamURL: "steam://open/downloads"
 ] find -
-nClientBackgroundAutoUpdateTargetHour = "4" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
-nClientBackgroundAutoUpdateTimeSpreadMinutes = "360" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
+nClientBackgroundAutoUpdateTargetHour = "0" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
+nClientBackgroundAutoUpdateTimeSpreadMinutes = "0" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
 @nCloudClientUseGetAppFileChangelist = "1" - Should the client use the new GetAppFileChangelist API - 0 = no, 1 = yes, 2 = beta clients
 @nContentUpdateAutoVerifyCleanBytesThresholdMB = "2048" - How many clean MB must we verify before backing off on auto-verifies
 @nContentUpdateAutoVerifyPostThresholdOdds = "10" - 1 in X chance we auto-verify this update even if you've reached the clean-data threshold
@@ -44,7 +45,6 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -testssa - force display of SSA
 -forceservice - Run Steam Client Service even if Steam has admin rights
 -offlinemode - Always attempt to start in offline mode
--noreactlogin - Disable react based login form
 -master_ipc_name_override - 
 -teststoragedata - Enable test storage data
 -quicklogin - Set the base used to construct quick login URLs
@@ -131,6 +131,8 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -net_fake_state - Set initial value for net_fake_state
 -net_start_wifi_disabled - Set the initial value for wifi enabled to false.  (Useful when emulating SteamDeck)
 -private_ip_override - 
+-noreactlogin - Disable react based login form
+-reactlogin - Enable react based login form. Only valid in the non-beta public client.
 -init_universe - 
 -no-shared-textures - forces overlay to avoid sharing texture handles with game process
 -nocrashmonitor - 
