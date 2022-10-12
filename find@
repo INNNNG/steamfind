@@ -80,7 +80,6 @@
 @csecSiteLicenseProxyStatsUpdate = "1" - update proxy stats internally this often
 @bSiteLicenseServer = "0" - 
 @bEnableMovieRecording = "0" - 
-@bUseWebMicrotxnPathInSteamClient = "1" - 
 @nLegalDictionaryUpdateRateInSeconds = "600" - 
 @bEnableOfflineLogonTicket = "1" - If true, an offline logon ticket will be requested during logon if none is cached
 @bRequireOfflineLogonTicket = "1" - If true, a valid offline logon ticket is required when logging in in offline or no connection mode
