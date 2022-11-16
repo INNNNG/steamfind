@@ -61,6 +61,8 @@
 @nClientDownloadPreferredServerMaxLoad = "85" - Once preferred servers reach this load, we'll continue to use non-preferred servers in the list after them
 @bClientDownloadUseHTTPS = "0" - Set this to use HTTPS on supported download servers
 @RunAdminInstallScriptsFromService = "0" - 
+@PeerContentServerPort = "27040" - If peer content server, will listen on this port for TCP connections from peers
+@PeerContentServerMode = "1" - 0 = off, 1 = only me, 2 = everybody on LAN
 @cbPartnerUploadChunkSize = "1000000" - Chunk size to use for POSTing partner uploads
 @bForceStreamUnsupportedApp = "0" - 
 @uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
@@ -138,6 +140,7 @@
 @bMsgErrorDump = "0" - 
 @bEnableNetworkJobsOwnStartList = "1" - 
 @cMinimumJobTimeoutsToCheckPerFrame = "100" - 
+@nJobNetSendsInsaneThreshold = "15000" - 
 @nJobInteryieldMillisecondsLogThreshold = "100" - 
 @nJobInteryieldMillisecondsAlertThreshold = "200" - 
 @nTCPLargeSendBufSizeMB = "16" - 

@@ -1,7 +1,6 @@
-ExecuteSteamURL: "steam://open/downloads"
 ] find -
-nClientBackgroundAutoUpdateTargetHour = "0" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
-nClientBackgroundAutoUpdateTimeSpreadMinutes = "0" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
+nClientBackgroundAutoUpdateTimeSpreadMinutes = "360" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
+nClientBackgroundAutoUpdateTargetHour = "4" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
 @nCloudClientUseGetAppFileChangelist = "1" - Should the client use the new GetAppFileChangelist API - 0 = no, 1 = yes, 2 = beta clients
 @nContentUpdateAutoVerifyCleanBytesThresholdMB = "2048" - How many clean MB must we verify before backing off on auto-verifies
 @nContentUpdateAutoVerifyPostThresholdOdds = "10" - 1 in X chance we auto-verify this update even if you've reached the clean-data threshold
@@ -23,6 +22,7 @@ nClientBackgroundAutoUpdateTimeSpreadMinutes = "0" - Spread of time around the a
 @nCallerDeadlineHopLatencyMS = "10" - When we send a message expecting a reply from a job with a deadline, set the timeout on the message to [current time remaining in this job] - N ms.  A negative value prevents propagating caller deadlines down the chain
 @panorama_suggestions_view = "0" - 0 - default, 1 - no games or friends, 2 - just games no friends, 3 - some games and friends, 4 - some  friends no games
 app_license_request - <AppID> - Requests a free licenses for this app if not already owned.
+set_var - <name> <value>- Set the value of a Cvar
 cloud_sync_up - <appid> Manually triggers after-game cloud sync for the given app.
 cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given app.
 -dumpvideostream - Dump the game stream as an elementary video file
@@ -39,6 +39,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -flushconfig - 
 -fulldesktopres - Run tenfoot in full desktop resolution rather than 1080p, overrides -720p as well.
 -windowed - Run Steam tenfoot mode in a window rather than a fullscreen borderless window
+-oldmarketingdisplay - 
 -720p - Run tenfoot in 720p rather than 1080p
 -480p - Run tenfoot in 480p rather than 1080p
 -language - Set Steam client UI language
@@ -46,12 +47,15 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -forceservice - Run Steam Client Service even if Steam has admin rights
 -offlinemode - Always attempt to start in offline mode
 -master_ipc_name_override - 
+-showallbetas - Disable client beta filtering
 -teststoragedata - Enable test storage data
 -quicklogin - Set the base used to construct quick login URLs
 -community - Set the community URL
 -store - Set the store URL
 -help - Set the help/support URL
 -login - Automatically logs in user
+-rememberpassword - If logging in user with credentials specified on the command line, proceed as if 'remember my password' had been enabled
+-gamepadnewauth - Enables QR Code and mobile confirmations in gamepad UI
 -forcecontrollerappid - Force a Specific AppID for Steam Controller Config - Prevents context/app switching from changing configuration
 -debugbutton - Show debug button in content frame header
 -nointro - Skip intro movie
@@ -106,6 +110,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -cef-delaypageload - Disable early-out for known page loads
 -cef-disable-delaypageload - Disable early-out for known page loads
 -cef-enable-samesite-by-default-cookies - Treat unspecified samesite as samesite=lax
+-cef-disable-renderer-restart - Disable auto-restart of renderer process for existing browsers
 -cef-winxp - force running the WinXP compatible CEF browser
 -clientui - 
 -toggle-overlay-html-mode - Disables new faster overlay HTML path (or enables if on a branch it's not on by default for)
@@ -132,7 +137,6 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -net_start_wifi_disabled - Set the initial value for wifi enabled to false.  (Useful when emulating SteamDeck)
 -private_ip_override - 
 -noreactlogin - Disable react based login form
--reactlogin - Enable react based login form. Only valid in the non-beta public client.
 -init_universe - 
 -no-shared-textures - forces overlay to avoid sharing texture handles with game process
 -nocrashmonitor - 
