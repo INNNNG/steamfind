@@ -29,12 +29,12 @@
 @DepotBuilderXORMatchPercent = "95" - 
 @DepotBuilderDeltaMaxChunks = "20000" - 
 @nCSClientRateLimitKbps = "0" - 
-@bCSClientRateLimitUseDelays = "0" - 
 @nLANPeerGroupRateLimitKbps = "0" - 
 @nDownloadLANChunkCacheSizeMB = "128" - 
 @nDownloadLANPeerGroup = "0" - 
 @nLANPeerRateLimitKbps = "0" - 
 @nLANPeerMaxConnections = "24" - 
+@PeerContentClientMode = "0" - 0 = off, 1 = only me, 2 = everybody on LAN
 @cMaxContentServersToRequest = "20" - 
 @cMaxInitialDownloadSources = "-1" - 
 @cSecUploadDownloadRates = "300" - 
@@ -42,6 +42,7 @@
 @ForceContentServer = "" - 
 @CSInterfaceProxyUsername = "" - 
 @CSInterfaceProxyPassword = "" - 
+@PeerContentServerRetryDelay = "60" - seconds before retring peer content server
 @cCSClientMaxNumSocketsPerHost = "8" - 
 @cCSClientMaxNumSocketsPerHostForCachingProxy = "32" - 
 @sCSDSVirtualHostHeader = "" - 
@@ -62,13 +63,14 @@
 @bClientDownloadUseHTTPS = "0" - Set this to use HTTPS on supported download servers
 @RunAdminInstallScriptsFromService = "0" - 
 @PeerContentServerPort = "27040" - If peer content server, will listen on this port for TCP connections from peers
-@PeerContentServerMode = "1" - 0 = off, 1 = only me, 2 = everybody on LAN
+@PeerContentServerMode = "0" - 0 = off, 1 = only me, 2 = everybody on LAN
+@PeerContentServerLZMA = "0" - use LZMA for LAN downloads
 @cbPartnerUploadChunkSize = "1000000" - Chunk size to use for POSTing partner uploads
 @bForceStreamUnsupportedApp = "0" - 
 @uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
 @uRemoteDiscoveryPortTransmit = "0" - If non-zero, will transmit outgoing broadcasts on this port instead of on the listen port
 @StreamClientArgs = "" - 
-@bEnableSiteLicenseConnect = "1" - 
+@bEnableSiteLicenseConnect = "1"" - 
 @bEnableSiteLicenseConsoleLogging = "0" - 
 @sSiteLicenseProxyCacheDirectory = "appcache/slscache" - If local content cache is enabled, use this path for disk cache
 @nSiteLicenseProxyCacheMaxGB = "100" - If local content cache is enabled, use up to this much disk space
@@ -117,6 +119,7 @@
 @metricsEnabledOperations = "CInfluxClient::SendCurrentBatchAsync" - Comma separated list of metrics operations - enable list
 @metricsEnabledCatalogs = "" - Comma separated list of metrics catalogs - enable list.  Inclusion in this list bypasses operation whitelist.  Probably every catalog other than job_metrics should be in here.
 @bMetricsEnabled = "1" - Enabling allows jobs to collect and report metrics through IMetricsReporters.
+@bCallerDeadlineAbortJobDisableWhenHTTPReqStart = "1" - 
 @bEnableHTTP2OnAllCHTTPClients = "0" - Enable HTTP/2 on all CHTTPClients automatically for SSL connections
 @bHttpClientRecordHostnameDimension = "0" - Group HTTP metrics by hostname.  Careful, the cardinality of your in-memory map might be large.
 @cNetEncryptionHandshakeWorkMax_HighPri = "8000" - 
