@@ -57,7 +57,7 @@ ConstrainMouse:0.0 = "false"
 DisplayGamma:0.0 = "BT709_sRGB" // one of [BT709_sRGB, BT709_BT1886]
 
 // Fullscreen mode
-DisplayMode:0.0 = "Fullscreen" // one of [Windowed, Fullscreen, Fullscreen borderless window, Fullscreen borderless extended window]
+DisplayMode:0.0 = "Fullscreen borderless window" // one of [Windowed, Fullscreen, Fullscreen borderless window, Fullscreen borderless extended window]
 
 // Enable focused mode
 FocusedMode:0.0 = "false"
@@ -66,13 +66,13 @@ FocusedMode:0.0 = "false"
 FocusedModeOpacity:0.0 = "0.900000" // 0.000000 to 1.000000
 
 // Monitor name of the monitor used to display the game
-Monitor:0.0 = "-1"
+Monitor:0.0 = "PHL 322M8CP"
 
 // Enable Nvidia low latency mode. Boost mode request maximum GPU clock frequency regardless of workload
-NvidiaReflex:0.0 = "Disabled" // one of [Disabled, Enabled, Enabled + boost]
+NvidiaReflex:0.0 = "Enabled + boost" // one of [Disabled, Enabled, Enabled + boost]
 
 // Fullscreen mode preference
-PreferredDisplayMode:0.0 = "Fullscreen" // one of [Windowed, Fullscreen, Fullscreen borderless window, Fullscreen borderless extended window]
+PreferredDisplayMode:0.0 = "Fullscreen borderless window" // one of [Windowed, Fullscreen, Fullscreen borderless window, Fullscreen borderless extended window]
 
 // Refresh rate of used monitor
 RefreshRate:0.0 = "Auto"
@@ -81,7 +81,7 @@ RefreshRate:0.0 = "Auto"
 Resolution:0.0 = "1920x1080"
 
 // Percentage of window resolution that the 3D scene renders at. value set by the user. can be smaller than the actual.
-ResolutionMultiplier:0.0 = "75" // 0 to 200
+ResolutionMultiplier:0.0 = "90" // 0 to 200
 
 // Synchronizes framerate with refresh rate to prevent screen tearing issues
 VSync:0.0 = "0" // 0 to 4
@@ -93,16 +93,16 @@ VSyncInMenu:0.0 = "false"
 WindowHeight:0.0 = "900" // 0 to 32767
 
 // Window is maximized on boot
-WindowMaximized:0.0 = "false"
+WindowMaximized:0.0 = "true"
 
 // Window width
 WindowWidth:0.0 = "1600" // 0 to 32767
 
 // Window X position
-WindowX:0.0 = "0" // -32768 to 32767
+WindowX:0.0 = "100" // -32768 to 32767
 
 // Window Y position
-WindowY:0.0 = "0" // -32768 to 32767
+WindowY:0.0 = "100" // -32768 to 32767
 
 //
 // Gameplay
@@ -115,16 +115,16 @@ CapFps:0.0 = "true"
 DepthOfField:0.0 = "false"
 
 // Adjusts the strength of the visual noise applied in-game
-FilmGrain:0.0 = "0.000000" // 0.000000 to 1.000000
+FilmGrain:0.0 = "0.250000" // 0.000000 to 1.000000
 
 // Custom maximum frames per second when in a match
-MaxFpsInGame:0.0 = "144" // 30 to 300
+MaxFpsInGame:0.0 = "60" // 30 to 300
 
 // Custom maximum frames per second when in menus
 MaxFpsInMenu:1.0 = "30" // 30 to 300
 
 // Custom maximum frames per second when game is out of focus
-MaxFpsOutOfFocus:0.0 = "5" // 5 to 300
+MaxFpsOutOfFocus:0.0 = "10" // 5 to 300
 
 //
 // Graphics
@@ -170,13 +170,13 @@ DeferredPhysics:0.0 = "Low Quality" // one of [Low Quality, Medium Quality, High
 DynamicSceneResolution:0.0 = "true"
 
 // Target frame time in ms for dynamic scene resolution.
-DynamicSceneResolutionTarget:0.0 = "6.944445" // 0.000000 to 100.000000
+DynamicSceneResolutionTarget:0.0 = "16.666666" // 0.000000 to 100.000000
 
 // Strength of the filmic visual noise filter
 FilmicStrength:0.0 = "1.000000" // 0.000000 to 1.000000
 
 // Preferred GPU if multiple GPU system
-GPUName:0.0 = "NNN"
+GPUName:0.0 = "NVIDIA GeForce RTX 3060"
 
 // GTAO Quality level
 GTAOQuality:0.0 = "R_GTAO_QUALITY_LOW" // one of [R_GTAO_QUALITY_LOW, R_GTAO_QUALITY_MEDIUM, R_GTAO_QUALITY_HIGH, R_GTAO_QUALITY_ULTRA]
@@ -288,7 +288,7 @@ XeSSQuality:0.0 = "Balanced" // one of [Maximum Performance, Balanced, Maximum Q
 //
 
 // Skip introduction movie that plays when game is started
-SkipIntro:0.0 = "true"
+SkipIntro:0.0 = "false"
 
 //
 // Mouse and Gamepad
@@ -311,7 +311,7 @@ ConfigCloudStorageEnabled:1.0 = "true"
 RecommendedSet:0.0 = "true"
 
 // Thread count for handling the job queue
-RendererWorkerCount:0.0 = "-1" // -1 to 16
+RendererWorkerCount:0.0 = "4" // -1 to 16
 
 // Set a target fraction of your PC's video memory to be used by the game
 VideoMemoryScale:0.0 = "0.800000" // 0.000000 to 2.000000
