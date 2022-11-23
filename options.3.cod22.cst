@@ -66,7 +66,7 @@ FocusedMode:0.0 = "false"
 FocusedModeOpacity:0.0 = "0.900000" // 0.000000 to 1.000000
 
 // Monitor name of the monitor used to display the game
-Monitor:0.0 = "PHL 322M8CP"
+Monitor:0.0 = "-1"
 
 // Enable Nvidia low latency mode. Boost mode request maximum GPU clock frequency regardless of workload
 NvidiaReflex:0.0 = "Enabled + boost" // one of [Disabled, Enabled, Enabled + boost]
@@ -81,7 +81,7 @@ RefreshRate:0.0 = "Auto"
 Resolution:0.0 = "1920x1080"
 
 // Percentage of window resolution that the 3D scene renders at. value set by the user. can be smaller than the actual.
-ResolutionMultiplier:0.0 = "90" // 0 to 200
+ResolutionMultiplier:0.0 = "80" // 0 to 200
 
 // Synchronizes framerate with refresh rate to prevent screen tearing issues
 VSync:0.0 = "0" // 0 to 4
@@ -93,7 +93,7 @@ VSyncInMenu:0.0 = "false"
 WindowHeight:0.0 = "900" // 0 to 32767
 
 // Window is maximized on boot
-WindowMaximized:0.0 = "true"
+WindowMaximized:0.0 = "false"
 
 // Window width
 WindowWidth:0.0 = "1600" // 0 to 32767
@@ -115,13 +115,13 @@ CapFps:0.0 = "true"
 DepthOfField:0.0 = "false"
 
 // Adjusts the strength of the visual noise applied in-game
-FilmGrain:0.0 = "0.250000" // 0.000000 to 1.000000
+FilmGrain:0.0 = "0.000000" // 0.000000 to 1.000000
 
 // Custom maximum frames per second when in a match
 MaxFpsInGame:0.0 = "60" // 30 to 300
 
 // Custom maximum frames per second when in menus
-MaxFpsInMenu:1.0 = "30" // 30 to 300
+MaxFpsInMenu:1.0 = "60" // 30 to 300
 
 // Custom maximum frames per second when game is out of focus
 MaxFpsOutOfFocus:0.0 = "10" // 5 to 300
@@ -131,10 +131,10 @@ MaxFpsOutOfFocus:0.0 = "10" // 5 to 300
 //
 
 // User preferred anti-aliasing technique
-AATechniquePreferred:0.0 = "Filmic SMAA T2x" // one of [SMAA T2x, Filmic SMAA T2x, DLSS, DLAA, XeSS]
+AATechniquePreferred:0.0 = "SMAA T2x" // one of [SMAA T2x, Filmic SMAA T2x, DLSS, DLAA, XeSS]
 
 // Strength for Contrast Adaptive Sharpening (CAS)
-AMDContrastAdaptiveSharpeningStrength:0.0 = "0.200000" // 0.000000 to 1.000000
+AMDContrastAdaptiveSharpeningStrength:0.0 = "0.500000" // 0.000000 to 1.000000
 
 // Enable AMD FidelityFX Super Resolution
 AMDSuperResolution:0.0 = "CAS - Sharpening only" // one of [Off, CAS - Sharpening only, AMD FSR 1.0]
@@ -161,7 +161,7 @@ DLSSPerfMode:0.0 = "Maximum Performance" // one of [Ultra Performance, Maximum P
 DLSSSharpness:0.0 = "0.650000" // -1.000000 to 1.000000
 
 // Default SMAA technique
-DefaultSMAATechnique:0.0 = "Filmic SMAA T2x" // one of [SMAA T2x, Filmic SMAA T2x]
+DefaultSMAATechnique:0.0 = "SMAA T2x" // one of [SMAA T2x, Filmic SMAA T2x]
 
 // Enable deferred physics
 DeferredPhysics:0.0 = "Low Quality" // one of [Low Quality, Medium Quality, High Quality, Developer]
@@ -176,7 +176,7 @@ DynamicSceneResolutionTarget:0.0 = "16.666666" // 0.000000 to 100.000000
 FilmicStrength:0.0 = "1.000000" // 0.000000 to 1.000000
 
 // Preferred GPU if multiple GPU system
-GPUName:0.0 = "NVIDIA GeForce RTX 3060"
+GPUName:0.0 = "NNN"
 
 // GTAO Quality level
 GTAOQuality:0.0 = "R_GTAO_QUALITY_LOW" // one of [R_GTAO_QUALITY_LOW, R_GTAO_QUALITY_MEDIUM, R_GTAO_QUALITY_HIGH, R_GTAO_QUALITY_ULTRA]
@@ -311,7 +311,7 @@ ConfigCloudStorageEnabled:1.0 = "true"
 RecommendedSet:0.0 = "true"
 
 // Thread count for handling the job queue
-RendererWorkerCount:0.0 = "4" // -1 to 16
+RendererWorkerCount:0.0 = "-1" // -1 to 16
 
 // Set a target fraction of your PC's video memory to be used by the game
 VideoMemoryScale:0.0 = "0.800000" // 0.000000 to 2.000000
