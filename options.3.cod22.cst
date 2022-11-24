@@ -221,7 +221,7 @@ ReflectionProbeHalfResolution:0.0 = "true"
 ReflectionProbeRelighting:0.0 = "4" // 1 to 4
 
 // SMAA Quality level
-SMAAQuality:0.0 = "SMAA_QUALITY_LOW" // one of [SMAA_QUALITY_LOW, SMAA_QUALITY_MEDIUM, SMAA_QUALITY_HIGH, SMAA_QUALITY_ULTRA]
+SMAAQuality:0.0 = "SMAA_QUALITY_MEDIUM" // one of [SMAA_QUALITY_LOW, SMAA_QUALITY_MEDIUM, SMAA_QUALITY_HIGH, SMAA_QUALITY_ULTRA]
 
 // Screen-space ambient occlusion method
 SSAOTechnique:0.0 = "Off" // one of [Off, GTAO, MDAO, GTAO & MDAO]
