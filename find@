@@ -70,7 +70,7 @@
 @uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
 @uRemoteDiscoveryPortTransmit = "0" - If non-zero, will transmit outgoing broadcasts on this port instead of on the listen port
 @StreamClientArgs = "" - 
-@bEnableSiteLicenseConnect = "1"" - 
+@bEnableSiteLicenseConnect = "1" - 
 @bEnableSiteLicenseConsoleLogging = "0" - 
 @sSiteLicenseProxyCacheDirectory = "appcache/slscache" - If local content cache is enabled, use this path for disk cache
 @nSiteLicenseProxyCacheMaxGB = "100" - If local content cache is enabled, use up to this much disk space

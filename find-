@@ -1,23 +1,23 @@
 ] find -
-nClientBackgroundAutoUpdateTimeSpreadMinutes = "0" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
-nClientBackgroundAutoUpdateTargetHour = "0" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
+app_set_config - <AppID> <key> <value> - sets a config value for given app.
+nClientBackgroundAutoUpdateTimeSpreadMinutes = "360" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
+nClientBackgroundAutoUpdateTargetHour = "4" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
 @nCloudClientUseGetAppFileChangelist = "1" - Should the client use the new GetAppFileChangelist API - 0 = no, 1 = yes, 2 = beta clients
 @nContentUpdateAutoVerifyCleanBytesThresholdMB = "2048" - How many clean MB must we verify before backing off on auto-verifies
 @nContentUpdateAutoVerifyPostThresholdOdds = "10" - 1 in X chance we auto-verify this update even if you've reached the clean-data threshold
 @nClientQueryCMDirectoryBeforeConnect = "1" - Use CMDirectory webapi to get fresh CM list on connect - 0=disabled, 1=enabled, 2=main/dev/beta clients only
 @nClientDownloadPreferredServerMaxLoad = "85" - Once preferred servers reach this load, we'll continue to use non-preferred servers in the list after them
+@nClientDownloadInitWindowSizeHTTP2Stream = "2000000" - Init per-stream window size for HTTP/2.
+@nClientDownloadInitWindowSizeHTTP2Connection = "10000000" - Init per-connection window size for HTTP/2.
 @uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
 @uRemoteDiscoveryPortTransmit = "0" - If non-zero, will transmit outgoing broadcasts on this port instead of on the listen port
+httpclients - [cMaxPerCnx] Dump HTTP client stats, optionally limiting the # of in-flight requests to spew per connection
 @csecDurationControlPeriod = "" - Override default duration-control / anti-indulgence time period. If nonzero, initial playtime threshold is this value in seconds
 @csecDurationControlPeriodToday = "" - Override default duration-control / anti-indulgence time period. If nonzero, per-day playtime threshold is this value in seconds
 @durationControlNightCheck = "1" - Time of day check for duration-control feature. 1 = normal. 2 = force night-time. 0 = disable checks, only enabled for age verified accounts
 @test_nCloudForceSyncFailureAppID = "0" - Set this to a non-zero App ID to test cloud sync failure. The next sync request will fail.
 @nHTPPServerLogLevelAccessLine200 = "3" - Log level to use for one-line access-log-style for each http server request returning 200
 @nHTPPServerLogLevelAccessLineNon200 = "2" - Log level to use for one-line access-log-style for each http server request that returns != 200
-@influxBlacklistedTags = "steamid" - Comma separated list of tag names known to cause cardinality problems for Influx.  We drop those tags but emit the others per-metrics.
-@metricsDisabledOperations = "" - Comma separated list of metrics operations - disable list
-@metricsEnabledOperations = "CInfluxClient::SendCurrentBatchAsync" - Comma separated list of metrics operations - enable list
-@metricsEnabledCatalogs = "" - Comma separated list of metrics catalogs - enable list.  Inclusion in this list bypasses operation whitelist.  Probably every catalog other than job_metrics should be in here.
 @bHttpClientRecordHostnameDimension = "0" - Group HTTP metrics by hostname.  Careful, the cardinality of your in-memory map might be large.
 @nCallerDeadlineHopLatencyMS = "10" - When we send a message expecting a reply from a job with a deadline, set the timeout on the message to [current time remaining in this job] - N ms.  A negative value prevents propagating caller deadlines down the chain
 @panorama_suggestions_view = "0" - 0 - default, 1 - no games or friends, 2 - just games no friends, 3 - some games and friends, 4 - some  friends no games
@@ -30,7 +30,6 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -openoverlaydevtools - Open Chrome devtools on creation of any overlay browsers
 -friendsui - 
 -nofriendsui - 
--no-browser - unconditionally disables CEF
 -opengl - Use the OpenGL render for the UI
 -fullscreenopengl - Use the full screen OpenGL render for the UI
 -steamos - 
@@ -73,6 +72,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -tenfoot - Start in Steam Big Picture mode
 -bigpicture - Start in Steam Big Picture mode
 -gamepadui - Start in gamepadui mode
+-desktopui - Start in desktopui mode
 -vgui - Start in vgui mode
 -vguimessages - set to see debug vgiui2 messages
 -fs_log - Log file system accesses
@@ -137,7 +137,6 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -net_fake_state - Set initial value for net_fake_state
 -net_start_wifi_disabled - Set the initial value for wifi enabled to false.  (Useful when emulating SteamDeck)
 -private_ip_override - 
--noreactlogin - Disable react based login form
 -init_universe - 
 -no-shared-textures - forces overlay to avoid sharing texture handles with game process
 -nocrashmonitor - 
@@ -147,6 +146,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -vrskip - Skip VR initialization entirely no matter who asks for it
 -vrforce - Always perform Hmd status check even if we crashed the last time we tried
 -candidates - Show libjingle candidates for local connection as they are processed
--newvrchat - 
+-no-browser - unconditionally disables CEF
+-noreactlogin - disables new login UI
 -unhidefriendsui - 
 -forcevgui - 
