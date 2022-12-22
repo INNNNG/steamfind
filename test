@@ -1,6 +1,6 @@
 {
    "account_id_migration_state": 2,
-   "account_tracker_service_last_update": "13316165154496410",
+   "account_tracker_service_last_update": "13316166063383108",
    "alternate_error_pages": {
       "backup": true
    },
@@ -43,18 +43,13 @@
    },
    "countryid_at_install": 17230,
    "data_reduction": {
-      "daily_original_length": [  ],
-      "daily_received_length": [  ],
-      "last_update_date": "0",
       "this_week_number": 2764,
       "this_week_services_downstream_foreground_kb": {
-         "49601082": 1,
-         "54845618": 3,
-         "77012883": 9
+         "54845618": 3
       }
    },
    "default_search_provider": {
-      "synced_guid": "351691ca-69d1-4846-8456-db118feb5250"
+      "synced_guid": "b234dfbe-f60c-4944-a903-3141b076dad2"
    },
    "default_search_provider_data": {
       "template_url_data": {
@@ -65,7 +60,7 @@
          "date_created": "0",
          "doodle_url": "",
          "favicon_url": "https://www.baidu.com/favicon.ico",
-         "id": "11",
+         "id": "12",
          "image_url": "",
          "image_url_post_params": "",
          "input_encodings": [ "UTF-8" ],
@@ -81,23 +76,19 @@
          "short_name": "Baidu",
          "suggestions_url": "https://suggestion.baidu.com/su?wd={searchTerms}&action=opensearch&ie={inputEncoding}",
          "suggestions_url_post_params": "",
-         "synced_guid": "351691ca-69d1-4846-8456-db118feb5250",
+         "synced_guid": "b234dfbe-f60c-4944-a903-3141b076dad2",
          "url": "https://www.baidu.com/s?wd={searchTerms}&ie={inputEncoding}",
          "usage_count": 0
       }
    },
    "domain_diversity": {
-      "last_reporting_timestamp": "13316165178759075"
+      "last_reporting_timestamp": "13316166071788115"
    },
    "download": {
       "directory_upgrade": true
    },
    "ee": {
       "browser": {
-         "bd_ws_en": true,
-         "bd_ws_tn": "62095104_17_oem_dg",
-         "favorite_add_status": true,
-         "favorite_list_str": "WyB7DQogICAia2V5IjogImZhdm9yaXRlYmFyciIsDQogICAidGl0bGUiOiAi55m+5bqmIiwNCiAgICJ1cmwiOiAiaHR0cHM6Ly93d3cuYmFpZHUuY29tLz90bj02MjA5NTEwNF8xN19vZW1fZGciDQp9LCB7DQogICAia2V5IjogIiIsDQogICAidGl0bGUiOiAiIiwNCiAgICJ1cmwiOiAiIg0KfSwgew0KICAgImtleSI6ICIiLA0KICAgInRpdGxlIjogIiIsDQogICAidXJsIjogIiINCn0gXQ0K",
          "history_count": 0
       }
    },
@@ -112,7 +103,7 @@
          } ]
       },
       "garbagecollect": {
-         "lasttime": "13316165202191224"
+         "lasttime": "13316166093177571"
       },
       "last_chrome_version": "13.5.2022.0",
       "settings": {
@@ -134,7 +125,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13316165154253326",
+            "install_time": "13316166063167947",
             "location": 5,
             "manifest": {
                "app": {
@@ -183,7 +174,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13316165154252625",
+            "install_time": "13316166063166893",
             "location": 5,
             "manifest": {
                "chrome_url_overrides": {
@@ -230,7 +221,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13316165154253986",
+            "install_time": "13316166063169015",
             "location": 5,
             "manifest": {
                "background": {
@@ -277,7 +268,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13316165154252995",
+            "install_time": "13316166063167438",
             "location": 5,
             "manifest": {
                "app": {
@@ -325,7 +316,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13316165154253645",
+            "install_time": "13316166063168452",
             "location": 5,
             "manifest": {
                "content_security_policy": "script-src 'self' 'wasm-eval' blob: filesystem: chrome://resources; object-src * blob: externalfile: file: filesystem: data:; plugin-types application/x-google-chrome-pdf",
@@ -358,28 +349,23 @@
          "id": "jisu13"
       }
    },
-   "gcm": {
-      "product_category_for_subtypes": "cn.360chrome.windows"
-   },
    "google": {
       "services": {
-         "signin_scoped_device_id": "afbd981f-ae1d-4828-9f2c-bd7b6fe337cc"
+         "signin_scoped_device_id": "378a68d7-360e-4006-8f4c-ae2971a851ed"
       }
    },
    "homepage_is_newtabpage": false,
-   "http_original_content_length": "0",
-   "http_received_content_length": "0",
    "kMouseGestureProfile": {
       "kMGPUserOpenNewTabOrder": 0
    },
    "media": {
-      "device_id_salt": "B5C494937A930F2D3AA4854AC9DC85DE",
+      "device_id_salt": "9D324D4B4A3064EDF986DA11D3F6B15A",
       "engagement": {
          "schema_version": 4
       }
    },
    "media_router": {
-      "receiver_id_hash_token": "lyY9IKmTLEWRWa+QclojL2zQdn5aq0PwkGliunmybPID7dav9SY9seWaCT9Mkn5HchskkTE61jIOfVCUIMN5uw=="
+      "receiver_id_hash_token": "hC7cR4Nf5ZT9RLM3o4F3aWQhBpBf8XdG1ASNhe65AL3R1bJ3/97kpJwqKIbnlEUkR5bDZsZAUkSi6ZYxFjOTdw=="
    },
    "ntp": {
       "num_personal_suggestions": 9,
@@ -387,7 +373,6 @@
 
       }
    },
-   "pinned_tabs": [  ],
    "plugins": {
       "npapi_flash_migrated_to_pepper_flash": true,
       "plugins_list": [  ]
@@ -493,17 +478,7 @@
 
             },
             "media_engagement": {
-               "https://www.baidu.com:443,*": {
-                  "expiration": "0",
-                  "last_modified": "13316165158773954",
-                  "model": 0,
-                  "setting": {
-                     "hasHighScore": false,
-                     "lastMediaPlaybackTime": 0.0,
-                     "mediaPlaybacks": 0,
-                     "visits": 1
-                  }
-               }
+
             },
             "media_stream_camera": {
 
@@ -541,61 +516,61 @@
             "popups": {
                "[*.]99bill.com,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248396",
+                  "last_modified": "13316166063162214",
                   "model": 0,
                   "setting": 1
                },
                "[*.]alipay.com,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248422",
+                  "last_modified": "13316166063162239",
                   "model": 0,
                   "setting": 1
                },
                "[*.]dangdang.com,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248435",
+                  "last_modified": "13316166063162251",
                   "model": 0,
                   "setting": 1
                },
                "[*.]ipos.10086.cn,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248383",
+                  "last_modified": "13316166063162198",
                   "model": 0,
                   "setting": 1
                },
                "[*.]netpay.sdo.com,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248368",
+                  "last_modified": "13316166063162181",
                   "model": 0,
                   "setting": 1
                },
                "[*.]pay.ips.com.cn,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248411",
+                  "last_modified": "13316166063162228",
                   "model": 0,
                   "setting": 1
                },
                "[*.]pay.soopay.net,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248402",
+                  "last_modified": "13316166063162222",
                   "model": 0,
                   "setting": 1
                },
                "[*.]payment.chinapnr.com,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248390",
+                  "last_modified": "13316166063162206",
                   "model": 0,
                   "setting": 1
                },
                "[*.]pingan.com,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248428",
+                  "last_modified": "13316166063162245",
                   "model": 0,
                   "setting": 1
                },
                "[*.]tenpay.com,*": {
                   "expiration": "0",
-                  "last_modified": "13316165154248417",
+                  "last_modified": "13316166063162233",
                   "model": 0,
                   "setting": 1
                }
@@ -621,13 +596,13 @@
             "site_engagement": {
                "https://www.baidu.com:443,*": {
                   "expiration": "0",
-                  "last_modified": "13316165172688455",
+                  "last_modified": "13316166063721253",
                   "model": 0,
                   "setting": {
-                     "lastEngagementTime": 1.3316165172688444e+16,
+                     "lastEngagementTime": 1.3316166063721248e+16,
                      "lastShortcutLaunchTime": 0.0,
-                     "pointsAddedToday": 4.5,
-                     "rawScore": 4.5
+                     "pointsAddedToday": 3.0,
+                     "rawScore": 3.0
                   }
                }
             },
@@ -666,8 +641,8 @@
       "exit_type": "Crashed",
       "exited_cleanly": true,
       "icon_version": 6,
-      "last_engagement_time": "13316165172688445",
-      "last_time_obsolete_http_credentials_removed": 1671691632.364005,
+      "last_engagement_time": "13316166063721247",
+      "last_time_obsolete_http_credentials_removed": 1671692523.352093,
       "managed_user_id": "",
       "name": "”√ªß1",
       "password_manager_enabled": false,
@@ -689,15 +664,13 @@
          "introx64": {
             "count": 3,
             "enable": true,
-            "show_date": "1671638400",
-            "used_count": 1,
             "version": 4
          },
          "login_wechat_tips": false,
          "new_tab": {
             "show_bookmark_bar": false
          },
-         "randnum": 57,
+         "randnum": 2,
          "randtime": "13316112000000000",
          "savepower_extensions": [  ],
          "se9_import_type": 4,
