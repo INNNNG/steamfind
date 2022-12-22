@@ -4,15 +4,20 @@
    "alternate_error_pages": {
       "backup": true
    },
+   "autocomplete": {
+      "retention_policy_last_version": 13
+   },
    "autofill": {
       "orphan_rows_removed": true
    },
    "browser": {
       "check_default_browser_satrt": true,
+      "clear_old_version_jijian_pref": false,
       "ees": {
 
       },
       "should_reset_check_default_browser": false,
+      "toolbox_switcher_guide_shown_1": true,
       "window_placement": {
          "bottom": 1030,
          "left": 10,
@@ -28,6 +33,9 @@
    "countryid_at_install": 17230,
    "data_reduction": {
       "this_week_number": 2764
+   },
+   "domain_diversity": {
+      "last_reporting_timestamp": "13316166830826247"
    },
    "download": {
       "directory_upgrade": true
@@ -151,7 +159,7 @@
             },
             "content_settings": [  ],
             "creation_flags": 1,
-            "events": [  ],
+            "events": [ "runtime.onConnectExternal" ],
             "from_bookmark": false,
             "from_webstore": false,
             "incognito_content_settings": [  ],
@@ -532,7 +540,17 @@
 
             },
             "site_engagement": {
-
+               "https://www.baidu.com:443,*": {
+                  "expiration": "0",
+                  "last_modified": "13316166821767756",
+                  "model": 0,
+                  "setting": {
+                     "lastEngagementTime": 1.3316166821767748e+16,
+                     "lastShortcutLaunchTime": 0.0,
+                     "pointsAddedToday": 3.0,
+                     "rawScore": 3.0
+                  }
+               }
             },
             "sound": {
 
@@ -569,6 +587,7 @@
       "exit_type": "Crashed",
       "exited_cleanly": true,
       "icon_version": 6,
+      "last_engagement_time": "13316166821767749",
       "managed_user_id": "",
       "name": "”√ªß1",
       "per_host_zoom_levels": {
@@ -581,18 +600,28 @@
    "safemon_lock_search": 0,
    "se": {
       "browser": {
+         "introx64": {
+            "count": 3,
+            "enable": true,
+            "version": 4
+         },
          "randnum": 29,
          "randtime": "13316112000000000",
-         "savepower_extensions": [  ]
+         "savepower_extensions": [  ],
+         "se9_import_type": 4,
+         "toolbox_hide_status_bar_state": 1
       }
    },
+   "show_statusworld": false,
    "translate_site_blacklist_with_time": {
 
    },
    "web_apps": {
-      "system_web_app_failure_count": 1,
+      "system_web_app_failure_count": 0,
       "system_web_app_last_attempted_language": "zh-CN",
       "system_web_app_last_attempted_update": "13.5.2022.0",
+      "system_web_app_last_installed_language": "zh-CN",
+      "system_web_app_last_update": "13.5.2022.0",
       "user_display_mode_cleaned_up": false
    }
 }
