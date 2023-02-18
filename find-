@@ -1,4 +1,4 @@
-] find -
+find -
 app_set_config - <AppID> <key> <value> - sets a config value for given app.
 nClientBackgroundAutoUpdateTimeSpreadMinutes = "360" - Spread of time around the above target hour - this is the +/- 2-sigma window, so half this on either side.
 nClientBackgroundAutoUpdateTargetHour = "4" - Target hour, in local time, for auto-scheduled app updates. Will be spread around this point via the convar below.
@@ -54,7 +54,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -help - Set the help/support URL
 -login - Automatically logs in user
 -rememberpassword - If logging in user with credentials specified on the command line, proceed as if 'remember my password' had been enabled
--gamepadnewauth - Enables QR Code and mobile confirmations in gamepad UI
+-userchooser - Sends the user to the User Chooser even if they have 0 or 1 accounts
 -forcecontrollerappid - Force a Specific AppID for Steam Controller Config - Prevents context/app switching from changing configuration
 -debugbutton - Show debug button in content frame header
 -nointro - Skip intro movie
@@ -72,7 +72,6 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -tenfoot - Start in Steam Big Picture mode
 -bigpicture - Start in Steam Big Picture mode
 -gamepadui - Start in gamepadui mode
--desktopui - Start in desktopui mode
 -vgui - Start in vgui mode
 -vguimessages - set to see debug vgiui2 messages
 -fs_log - Log file system accesses
