@@ -41,6 +41,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -720p - Run tenfoot in 720p rather than 1080p
 -480p - Run tenfoot in 480p rather than 1080p
 -language - Set Steam client UI language
+-fullscreen - Set BPM to fullscreen
 -testssa - force display of SSA
 -forceservice - Run Steam Client Service even if Steam has admin rights
 -offlinemode - Always attempt to start in offline mode
@@ -54,7 +55,6 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -login - Automatically logs in user
 -rememberpassword - If logging in user with credentials specified on the command line, proceed as if 'remember my password' had been enabled
 -gamepadnewauth - Enables QR Code and mobile confirmations in gamepad UI
--nogamepadnewauth - Disables QR Code and mobile confirmations in gamepad UI
 -forcecontrollerappid - Force a Specific AppID for Steam Controller Config - Prevents context/app switching from changing configuration
 -debugbutton - Show debug button in content frame header
 -nointro - Skip intro movie
@@ -108,7 +108,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -cef-enable-gpu-debugging - Enable GPU debugging in Chromium, costs a glGetError() call after every command
 -cef-disable-gpu - Disable GPU usage in CEF (force software rendering/compositing)
 -cef-force-gpu - Force enable GPU acceleration
--cef-delaypageload - Disable early-out for known page loads
+-cef-delaypageload - Enable early-out for known page loads
 -cef-disable-delaypageload - Disable early-out for known page loads
 -cef-enable-samesite-by-default-cookies - Treat unspecified samesite as samesite=lax
 -cef-disable-renderer-restart - Disable auto-restart of renderer process for existing browsers
@@ -146,7 +146,5 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -vrskip - Skip VR initialization entirely no matter who asks for it
 -vrforce - Always perform Hmd status check even if we crashed the last time we tried
 -candidates - Show libjingle candidates for local connection as they are processed
--no-browser - unconditionally disables CEF
--noreactlogin - disables new login UI
 -unhidefriendsui - 
 -forcevgui - 
