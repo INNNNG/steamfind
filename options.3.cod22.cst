@@ -149,10 +149,10 @@ AbsoluteTargetResolution:0.0 = "none" // one of [540P, 640P, 720P, 900P, 1080P, 
 BulletImpacts:0.0 = "false"
 
 // The maximum distance at which clutter models are rendered.
-ClutterMaxDist:0.0 = "2500.000000" // 100.000000 to 10000.000000
+ClutterMaxDist:0.0 = "100.000000" // 100.000000 to 10000.000000
 
 // Corpses culling threshold
-CorpsesCullingThreshold:0.0 = "0.850000" // 0.500000 to 1.000000
+CorpsesCullingThreshold:0.0 = "0.500000" // 0.500000 to 1.000000
 
 // DLSS performance mode
 DLSSPerfMode:0.0 = "Maximum Performance" // one of [Ultra Performance, Maximum Performance, Balanced, Maximum Quality]
@@ -173,7 +173,7 @@ DynamicSceneResolution:0.0 = "true"
 DynamicSceneResolutionTarget:0.0 = "16.666666" // 0.000000 to 100.000000
 
 // Strength of the filmic visual noise filter
-FilmicStrength:0.0 = "1.000000" // 0.000000 to 1.000000
+FilmicStrength:0.0 = "0.000000" // 0.000000 to 1.000000
 
 // Preferred GPU if multiple GPU system
 GPUName:0.0 = "NNN"
@@ -209,7 +209,7 @@ ParticleQualityLevel:0.0 = "very low" // one of [very low, low, medium, high]
 ParticuleResolution:0.0 = "true"
 
 // Enable persistent damage layer
-PersistentDamageLayer:0.0 = "true"
+PersistentDamageLayer:0.0 = "false"
 
 // Particle Lighting quality level
 PixelPerLightmapTexel:0.0 = "64.000000" // 1.000000 to 256.000000
@@ -218,7 +218,7 @@ PixelPerLightmapTexel:0.0 = "64.000000" // 1.000000 to 256.000000
 ReflectionProbeHalfResolution:0.0 = "true"
 
 // Reflection probe relighting update stages
-ReflectionProbeRelighting:0.0 = "4" // 1 to 4
+ReflectionProbeRelighting:0.0 = "1" // 1 to 4
 
 // SMAA Quality level
 SMAAQuality:0.0 = "SMAA_QUALITY_MEDIUM" // one of [SMAA_QUALITY_LOW, SMAA_QUALITY_MEDIUM, SMAA_QUALITY_HIGH, SMAA_QUALITY_ULTRA]
@@ -245,10 +245,10 @@ SpotShadowCacheSize:0.0 = "0" // 0 to 3
 SpotShadowQualityLevel:0.0 = "Low" // one of [Low, Medium, High]
 
 // Static sunshadow moment clipmap resolution
-StaticSunshadowClipmapResolution:0.0 = "512" // 0 to 2147483647
+StaticSunshadowClipmapResolution:0.0 = "0" // 0 to 2147483647
 
 // Catmull Clark subdivision level
-SubdivisionLevel:0.0 = "3" // 0 to 8
+SubdivisionLevel:0.0 = "0" // 0 to 8
 
 // Quality level of shadows from the sun at a distance
 SunShadowCascade:0.0 = "Low    (1 cascade)" // one of [Low    (1 cascade), Normal (2-3 cascades)]
@@ -266,7 +266,7 @@ TextureQuality:0.0 = "3" // 0 to 3
 UiQuality:0.0 = "Auto" // one of [1080P, 4K, Auto]
 
 // Use large physical textures
-VirtualTexturingLargeMemory:0.0 = "false"
+VirtualTexturingLargeMemory:0.1 = "Small"
 
 // Volumetric quality
 VolumetricQuality:0.0 = "QUALITY_LOW" // one of [QUALITY_LOW, QUALITY_MEDIUM, QUALITY_HIGH]
@@ -288,7 +288,7 @@ XeSSQuality:0.0 = "Balanced" // one of [Maximum Performance, Balanced, Maximum Q
 //
 
 // Skip introduction movie that plays when game is started
-SkipIntro:0.0 = "false"
+SkipIntro:0.0 = "true"
 
 //
 // Mouse and Gamepad
@@ -316,3 +316,32 @@ RendererWorkerCount:0.0 = "-1" // -1 to 16
 // Set a target fraction of your PC's video memory to be used by the game
 VideoMemoryScale:0.0 = "0.800000" // 0.000000 to 2.000000
 
+// Lod scale
+LodScale:0.0 = "0.5" // 0.5 to 2
+
+// Enable high quality motion blur
+HighQualityMotionBlur:0.0 = "false"
+
+// Maximum number of particle
+MaximumParticles:0.0 = "0" // 0 to 524288
+
+// Low detail models at a high distance
+ForceLodDistanceQualityLow:0.0 = "true"
+
+// High detail models at a high distance
+LodDistanceQuality:0.0 = "false"
+
+// How many lights can receive dynamic shadows
+RoundRobinPrioritySpotShadowsMax:0.0 = "0" // 0 to 16
+
+// Use spot shadow cache to improve framerate
+CacheSpotShadow:0.0 = "Enabled" // one of [Disabled, Enabled, Preserve Updates]
+
+// Use cache sun shadow
+CacheSunShadow:0.0 = "true"
+
+// Enable weather grid volumes
+WeatherGridVolumes:0.0 = "false"
+
+// Run the game with an elevated priority
+ElevatedPriority:0.0 = "true"
