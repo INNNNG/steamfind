@@ -245,7 +245,7 @@ StaticSunshadowClipmapResolution:0.0 = "0" // 0 to 2147483647
 SubdivisionLevel:0.0 = "0" // 0 to 8
 
 // Quality level of shadows from the sun at a distance
-SunShadowCascade:0.0 = "Low    (1 cascade)" // one of [Low    (1 cascade), Normal (2-3 cascades)]
+SunShadowCascade:0.0 = "Low    (1 cascade)" // one of [Low    (1 cascade), Medium (1-2 cascades), High   (2-3 cascades)]
 
 // Tessellation quality level
 Tessellation:0.0 = "0_Off" // one of [0_Off, 1_Near, 2_All]
