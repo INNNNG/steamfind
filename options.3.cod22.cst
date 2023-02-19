@@ -1,8 +1,5 @@
 0
 
-// system settings version.
-Version:0.0 = "1"
-
 //
 // Audio
 //
@@ -113,9 +110,6 @@ CapFps:0.0 = "true"
 
 // Adds blur on out of focus areas when aiming down sights
 DepthOfField:0.0 = "false"
-
-// Adjusts the strength of the visual noise applied in-game
-FilmGrain:0.0 = "0.000000" // 0.000000 to 1.000000
 
 // Custom maximum frames per second when in a match
 MaxFpsInGame:0.0 = "60" // 30 to 300
@@ -265,8 +259,10 @@ TextureQuality:0.0 = "3" // 0 to 3
 // Ui Quality
 UiQuality:0.0 = "Auto" // one of [1080P, 4K, Auto]
 
-// Use large physical textures
-VirtualTexturingLargeMemory:0.1 = "Small"
+
+// Sets which memory mode to use for physical textures. 0:Extra small (11x11, 121 slots), 1:Small (16x16, 256 slots), 2:Medium (23x23, 529 slots), 3:Large (32x32, 1024 slots), 4:Extra large (45x45, 2025 slots). 
+VirtualTexturingMemoryMode:0.1 = "Small" // one of [Extra Small, Small, Medium, Large, Extra Large]
+
 
 // Volumetric quality
 VolumetricQuality:0.0 = "QUALITY_LOW" // one of [QUALITY_LOW, QUALITY_MEDIUM, QUALITY_HIGH]
@@ -315,6 +311,15 @@ RendererWorkerCount:0.0 = "-1" // -1 to 16
 
 // Set a target fraction of your PC's video memory to be used by the game
 VideoMemoryScale:0.0 = "0.800000" // 0.000000 to 2.000000
+
+// system settings version.
+Version:0.0 = "1"
+
+// Adjusts the strength of the visual noise applied in-game
+FilmGrain:0.0 = "0.000000" // 0.000000 to 1.000000
+
+// Use large physical textures
+VirtualTexturingLargeMemory:0.0 = "false"
 
 // Lod scale
 LodScale:0.0 = "0.5" // 0.5 to 2
