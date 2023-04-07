@@ -7,20 +7,19 @@
 	"StateFlags"		"4"
 	"installdir"		"Steamworks Shared"
 	"LastUpdated"		"1676393136"
-	"SizeOnDisk"		"1325025878"
+	"SizeOnDisk"		"1366204113"
 	"StagingSize"		"0"
 	"buildid"		"8899267"
-	"LastOwner"		"76561198327305561"
+	"LastOwner"		"76561198090039963"
 	"UpdateResult"		"0"
-	"BytesToDownload"		"0"
-	"BytesDownloaded"		"0"
-	"BytesToStage"		"0"
-	"BytesStaged"		"0"
+	"BytesToDownload"		"40038080"
+	"BytesDownloaded"		"40038080"
+	"BytesToStage"		"41178235"
+	"BytesStaged"		"41178235"
 	"TargetBuildID"		"8899267"
 	"AutoUpdateBehavior"		"2"
 	"AllowOtherDownloadsWhileRunning"		"0"
 	"ScheduledAutoUpdate"		"0"
-	"FullValidateAfterNextUpdate"		"0"
 	"InstalledDepots"
 	{
 		"228981"
@@ -128,6 +127,11 @@
 			"manifest"		"7746630274301172884"
 			"size"		"26729083"
 		}
+		"229032"
+		{
+			"manifest"		"3616495131483866412"
+			"size"		"41178235"
+		}
 		"229033"
 		{
 			"manifest"		"2059065101492814639"
@@ -157,6 +161,7 @@
 		"229012"		"_CommonRedist\\XNA\\4.0\\installscript.vdf"
 		"229020"		"_CommonRedist\\OpenAL\\2.0.7.0\\installscript.vdf"
 		"229031"		"_CommonRedist\\PhysX\\9.12.1031\\installscript.vdf"
+		"229032"		"_CommonRedist\\PhysX\\9.13.1220\\installscript.vdf"
 		"229033"		"_CommonRedist\\PhysX\\9.14.0702\\installscript.vdf"
 	}
 	"UserConfig"
