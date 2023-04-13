@@ -1,4 +1,4 @@
-] find @
+ find @
 @sSteamCmdForcePlatformType = "" - Must be one of: [windows | macos | linux | android]
 @sSteamCmdForcePlatformBitness = "" - Must be one of: [32 | 64]
 @GCNameOverride = "" - 
@@ -19,6 +19,7 @@
 @bCSForceNoCache = "0" - 
 @nCSJob404ResponseLimit = "100" - 
 @nCSJob5xyResponseLimit = "10" - 
+@csecCSJobSuccessfulRequestTimeWindow = "60" - 
 @bLANPeerConnectionTimeoutSec = "5" - 
 @DepotBuilderNumHTTPSocketsToMDS = "48" - 
 @DepotBuilderParallelUploadChunks = "6" - 
@@ -34,15 +35,18 @@
 @nDownloadLANPeerGroup = "0" - 
 @nLANPeerRateLimitKbps = "0" - 
 @nLANPeerMaxConnections = "24" - 
-@PeerContentClientMode = "0" - 0 = off, 1 = only me, 2 = everybody on LAN
+@uDownloadLANPeerPort = "27038" - If LAN p2p download enabled, will listen on this port for TCP connections from peers. Must be set consistently across all members of the group!
+@PeerContentClientMaxJobs = "1" - number of peer sources used at the same time
 @cMaxContentServersToRequest = "20" - 
 @cMaxInitialDownloadSources = "-1" - 
 @cSecUploadDownloadRates = "300" - 
 @LocalContentServer = "" - 
 @ForceContentServer = "" - 
+@ForceContentServerType = "" - 
+@ForceContentServerHTTPS = "0" - 
 @CSInterfaceProxyUsername = "" - 
 @CSInterfaceProxyPassword = "" - 
-@PeerContentServerRetryDelay = "60" - seconds before retring peer content server
+@PeerContentServerRetryDelay = "60" - seconds before retrying peer content server
 @cCSClientMaxNumSocketsPerHost = "8" - 
 @cCSClientMaxNumSocketsPerHostForCachingProxy = "32" - 
 @sCSDSVirtualHostHeader = "" - 
@@ -55,21 +59,25 @@
 @bDisableDualStackDownloads = "0" - 
 @sForceLocalContentCache = "" - 
 @sTrustedLocalContentCacheName = "" - Set this to the machine name where a trusted local Steam download cache is hosted, and we'll use it if available.
-@uDownloadLANPeerPort = "27038" - If LAN p2p download enabled, will listen on this port for TCP connections from peers. Must be set consistently across all members of the group!
 @bClientDownloadNiceNetworkThrottle = "0" - 
 @nClientDownloadNiceNetworkThrottlePercentage = "85" - 
 @nDownloadGlobalThrottlingDaytimeStartHour = "0" - 
 @nClientDownloadPreferredServerMaxLoad = "85" - Once preferred servers reach this load, we'll continue to use non-preferred servers in the list after them
+@nClientDownloadEnableHTTP2RelBranch = "1" - Only enable HTTP/2 on enabled platforms on rel branch client if this is set
+@nClientDownloadEnableHTTP2PlatformLinux = "1" - Enable HTTP/2 connections on Linux clients
+@nClientDownloadEnableHTTP2PlatformWindows = "1" - Enable HTTP/2 connections on Windows clients
+@nClientDownloadInitWindowSizeHTTP2Stream = "2000000" - Init per-stream window size for HTTP/2.
+@nClientDownloadInitWindowSizeHTTP2Connection = "10000000" - Init per-connection window size for HTTP/2.
 @bClientDownloadUseHTTPS = "0" - Set this to use HTTPS on supported download servers
 @RunAdminInstallScriptsFromService = "0" - 
 @PeerContentServerPort = "27040" - If peer content server, will listen on this port for TCP connections from peers
-@PeerContentServerMode = "0" - 0 = off, 1 = only me, 2 = everybody on LAN
-@PeerContentServerLZMA = "0" - use LZMA for LAN downloads
+@PeerContentServerMaxClients = "8" - limit number of peers connected
 @cbPartnerUploadChunkSize = "1000000" - Chunk size to use for POSTing partner uploads
 @bForceStreamUnsupportedApp = "0" - 
 @uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
 @uRemoteDiscoveryPortTransmit = "0" - If non-zero, will transmit outgoing broadcasts on this port instead of on the listen port
 @StreamClientArgs = "" - 
+@bShaderClientGetBucketManifestUseWebAPI = "1" - 
 @bEnableSiteLicenseConnect = "1" - 
 @bEnableSiteLicenseConsoleLogging = "0" - 
 @sSiteLicenseProxyCacheDirectory = "appcache/slscache" - If local content cache is enabled, use this path for disk cache
@@ -85,6 +93,8 @@
 @bSiteLicenseServer = "0" - 
 @bEnableMovieRecording = "0" - 
 @nLegalDictionaryUpdateRateInSeconds = "600" - 
+@nClientEnableHTTP2PlatformWindows = "0" - Enable HTTP/2 connections on Windows clients
+@nClientEnableHTTP2PlatformLinux = "0" - Enable HTTP/2 connections on Linux clients
 @bEnableOfflineLogonTicket = "1" - If true, an offline logon ticket will be requested during logon if none is cached
 @bRequireOfflineLogonTicket = "1" - If true, a valid offline logon ticket is required when logging in in offline or no connection mode
 @nParentalSettingsLogLevel = "4" - Control the amount of spew written to the parental log file
@@ -113,11 +123,9 @@
 @nHTPPServerLogLevelDetails200 = "4" - Log level to use for full details of any http server request returning 200.  This will probably fill up the log if you leave it on.
 @nHTPPServerLogLevelDetailsNon200 = "4" - Log level to use for full details of any http server request returning != 200
 @bEnforceValidEmailDomains = "1" - Enable valid email domains in BIsValidEmailAddress
-@metricsLegacyJobMetrics = "CInfluxClient::SendCurrentBatchAsync,UpdateAppJobReport,perf,ExternalStorageTransferReport,ChatRoom.RelaySendChatMessage#1,DownloadRates,DownloadRatesPerServer,AppBranchUpdateStats,Trust.FullAccountUpdate#1,Trust.OnAccountChanged#1,Trust.OnAccountLabeled#1,Trust.OnAccountLicenseAdded#1,PlayerStatsVOD,PlayerStatsBroadcast,CurrentPlayers,matchmaking,AppTransfers,DownloadRatesISP,DownloadRatesISPPerServer,ExternalTransferStats,BroadcastFetchStats,Transaction,DataTransfer,ContentServerStats,SteamPipeCDNWeights,RegionDirectives,BroadcastCDNWeights,China.ListPersonaNames#1,China.RestrictVisibility#1,GetInteractiveRecommendations,PlayerStallReportBroadcast,PlayerStallReportVOD,AddAnnouncementImage,GetIRAppRankForAccounts,email_monitor" - Comma separated list of Operation names that predate preaggregated job metrics.
-@influxBlacklistedTags = "steamid" - Comma separated list of tag names known to cause cardinality problems for Influx.  We drop those tags but emit the others per-metrics.
-@metricsDisabledOperations = "" - Comma separated list of metrics operations - disable list
-@metricsEnabledOperations = "CInfluxClient::SendCurrentBatchAsync" - Comma separated list of metrics operations - enable list
-@metricsEnabledCatalogs = "" - Comma separated list of metrics catalogs - enable list.  Inclusion in this list bypasses operation whitelist.  Probably every catalog other than job_metrics should be in here.
+@metricsDisabledCatalogs = "" - Comma separated list of metrics catalogs to disable.  This is the last check.
+@metricsEnabledOperations = "" - Comma separated list of metrics operations.  Overrides disabled catalogs
+@metricsDisabledOperations = "" - Comma separated list of metrics operations that are disabled.  This setting has highest priority
 @bMetricsEnabled = "1" - Enabling allows jobs to collect and report metrics through IMetricsReporters.
 @bCallerDeadlineAbortJobDisableWhenHTTPReqStart = "1" - 
 @bEnableHTTP2OnAllCHTTPClients = "0" - Enable HTTP/2 on all CHTTPClients automatically for SSL connections
@@ -183,4 +191,4 @@
 @StreamTransportICEPenalty = "0" - Add penalty (ms) to ICE for streaming transport selection
 @sBroadcastTune = "film" - 
 @sBroadcastPreset = "" - 
-@AllowSkipGameUpdate = "0" - 
+@AllowSkipGameUpdate = "0"" - 
