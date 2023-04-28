@@ -1,4 +1,4 @@
- find @
+] find @
 @sSteamCmdForcePlatformType = "" - Must be one of: [windows | macos | linux | android]
 @sSteamCmdForcePlatformBitness = "" - Must be one of: [32 | 64]
 @GCNameOverride = "" - 
@@ -21,6 +21,7 @@
 @nCSJob5xyResponseLimit = "10" - 
 @csecCSJobSuccessfulRequestTimeWindow = "60" - 
 @bLANPeerConnectionTimeoutSec = "5" - 
+@bClientTryRequestManifestWithoutCode = "0" - If set, client will try to get a manifest even without a manifest request code
 @DepotBuilderNumHTTPSocketsToMDS = "48" - 
 @DepotBuilderParallelUploadChunks = "6" - 
 @DepotBuilderMaxParallelUploadChunks = "96" - 
@@ -73,6 +74,7 @@
 @PeerContentServerPort = "27040" - If peer content server, will listen on this port for TCP connections from peers
 @PeerContentServerMaxClients = "8" - limit number of peers connected
 @cbPartnerUploadChunkSize = "1000000" - Chunk size to use for POSTing partner uploads
+@bPartnerUploadUseCloud = "-1" - set to request to use or not use cloud storage for legacy DRM uploads: 1 = yes, 0 = no, -1 = let server decide
 @bForceStreamUnsupportedApp = "0" - 
 @uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
 @uRemoteDiscoveryPortTransmit = "0" - If non-zero, will transmit outgoing broadcasts on this port instead of on the listen port
@@ -123,16 +125,22 @@
 @nHTPPServerLogLevelDetails200 = "4" - Log level to use for full details of any http server request returning 200.  This will probably fill up the log if you leave it on.
 @nHTPPServerLogLevelDetailsNon200 = "4" - Log level to use for full details of any http server request returning != 200
 @bEnforceValidEmailDomains = "1" - Enable valid email domains in BIsValidEmailAddress
+@cNetEncryptionHandshakeWorkMax_HighPri = "8000" - 
+@cNetEncryptionHandshakeWorkMax_MedPri = "4000" - 
+@cNetEncryptionHandshakeWorkMax_LowPri = "2000" - 
 @metricsDisabledCatalogs = "" - Comma separated list of metrics catalogs to disable.  This is the last check.
 @metricsEnabledOperations = "" - Comma separated list of metrics operations.  Overrides disabled catalogs
 @metricsDisabledOperations = "" - Comma separated list of metrics operations that are disabled.  This setting has highest priority
 @bMetricsEnabled = "1" - Enabling allows jobs to collect and report metrics through IMetricsReporters.
+@nSpewThrottleNagFrequencyMs = "5000" - 
+@nSpewThrottleUnconditionalResumeMs = "5000" - 
+@nSpewThrottleUnconditionalTriggerCount = "50" - 
+@nSpewThrottleResumeThreshold = "3" - 
+@nSpewThrottleTriggerThreshold = "10" - 
+@nSpewThrottlePeriodMs = "1000" - 
 @bCallerDeadlineAbortJobDisableWhenHTTPReqStart = "1" - 
 @bEnableHTTP2OnAllCHTTPClients = "0" - Enable HTTP/2 on all CHTTPClients automatically for SSL connections
 @bHttpClientRecordHostnameDimension = "0" - Group HTTP metrics by hostname.  Careful, the cardinality of your in-memory map might be large.
-@cNetEncryptionHandshakeWorkMax_HighPri = "8000" - 
-@cNetEncryptionHandshakeWorkMax_MedPri = "4000" - 
-@cNetEncryptionHandshakeWorkMax_LowPri = "2000" - 
 @nClientCMUDPPingTimeoutUseGoodEnoughMS = "250" - 
 @nClientCMUDPPingTimeGoodEnoughThresholdMS = "50" - 
 @cUDPSendRetries = "8" - 
@@ -142,22 +150,15 @@
 @net_backlog_time_allowed_sec = "8" - 
 @net_loopback = "1" - 
 @bEnableFrameFuncOverageWarnings = "0" - This turns on the spew in SPEW_MISC at level 4, still need to adjust spew levels to see it.
-@nSpewThrottleNagFrequencyMs = "5000" - 
-@nSpewThrottleUnconditionalResumeMs = "5000" - 
-@nSpewThrottleUnconditionalTriggerCount = "50" - 
-@nSpewThrottleResumeThreshold = "3" - 
-@nSpewThrottleTriggerThreshold = "10" - 
-@nSpewThrottlePeriodMs = "1000" - 
 @bMsgErrorDump = "0" - 
-@bEnableNetworkJobsOwnStartList = "1" - 
-@cMinimumJobTimeoutsToCheckPerFrame = "100" - 
 @nJobNetSendsInsaneThreshold = "15000" - 
 @nJobInteryieldMillisecondsLogThreshold = "100" - 
 @nJobInteryieldMillisecondsAlertThreshold = "200" - 
-@nTCPLargeSendBufSizeMB = "16" - 
 @nIOCPThreadCount = "1" - 
 @bLogMessageToProtobufClass = "1" - We we first discover the protobuf class used for a particular EMsg, log it
 @nCallerDeadlineHopLatencyMS = "10" - When we send a message expecting a reply from a job with a deadline, set the timeout on the message to [current time remaining in this job] - N ms.  A negative value prevents propagating caller deadlines down the chain
+@bEnableNetworkJobsOwnStartList = "1" - 
+@cMinimumJobTimeoutsToCheckPerFrame = "100" - 
 @bEnableLogTearOff = "1" - 
 @bEnableSpewThrottle = "1" - 
 @panorama_dragscroll_maxflickvelocity_vr = "8000" - Maximum velocity for a drag scroll flick in VR
@@ -191,4 +192,5 @@
 @StreamTransportICEPenalty = "0" - Add penalty (ms) to ICE for streaming transport selection
 @sBroadcastTune = "film" - 
 @sBroadcastPreset = "" - 
-@AllowSkipGameUpdate = "0"" - 
+@AllowSkipGameUpdate = "1"" - 
+ 
