@@ -1,119 +1,51 @@
-"AppWorkshop"
+"video.cfg"
 {
-	"appid"		"393380"
-	"SizeOnDisk"		"132034104730"
-	"NeedsUpdate"		"0"
-	"NeedsDownload"		"0"
-	"TimeLastUpdated"		"1681379946"
-	"TimeLastAppRan"		"1681382306"
-	"WorkshopItemsInstalled"
-	{
-		"1959152751"
-		{
-			"size"		"19299271606"
-			"timeupdated"		"1681201054"
-			"manifest"		"5789773092750449496"
-		}
-		"2070999037"
-		{
-			"size"		"42139287633"
-			"timeupdated"		"1615971487"
-			"manifest"		"2584732252209565438"
-		}
-		"2318834225"
-		{
-			"size"		"13488183605"
-			"timeupdated"		"1681023967"
-			"manifest"		"7913827279972625069"
-		}
-		"2428425228"
-		{
-			"size"		"37214402709"
-			"timeupdated"		"1674076582"
-			"manifest"		"8567965945282563849"
-		}
-		"2432926361"
-		{
-			"size"		"14406758529"
-			"timeupdated"		"1671162191"
-			"manifest"		"5908727286373704785"
-		}
-		"2618610732"
-		{
-			"size"		"1733114048"
-			"timeupdated"		"1679239166"
-			"manifest"		"9164656580946507369"
-		}
-		"2891780963"
-		{
-			"size"		"35340552"
-			"timeupdated"		"1681237109"
-			"manifest"		"7451733635603225453"
-		}
-		"2908652819"
-		{
-			"size"		"3717746048"
-			"timeupdated"		"1681199015"
-			"manifest"		"2112617010329462927"
-		}
-	}
-	"WorkshopItemDetails"
-	{
-		"1959152751"
-		{
-			"manifest"		"5789773092750449496"
-			"timeupdated"		"1681201054"
-			"timetouched"		"1681382383"
-			"subscribedby"		"367039833,1475870111"
-		}
-		"2070999037"
-		{
-			"manifest"		"2584732252209565438"
-			"timeupdated"		"1615971487"
-			"timetouched"		"0"
-			"subscribedby"		"398814974"
-		}
-		"2318834225"
-		{
-			"manifest"		"7913827279972625069"
-			"timeupdated"		"1681023967"
-			"timetouched"		"0"
-			"subscribedby"		"872073772,367039833"
-		}
-		"2428425228"
-		{
-			"manifest"		"8567965945282563849"
-			"timeupdated"		"1674076582"
-			"timetouched"		"0"
-			"subscribedby"		"872073772,367039833"
-		}
-		"2432926361"
-		{
-			"manifest"		"5908727286373704785"
-			"timeupdated"		"1671162191"
-			"timetouched"		"0"
-			"subscribedby"		"367039833"
-		}
-		"2618610732"
-		{
-			"manifest"		"9164656580946507369"
-			"timeupdated"		"1679239166"
-			"timetouched"		"1681382495"
-			"subscribedby"		"872073772,367039833,1475870111"
-		}
-		"2891780963"
-		{
-			"manifest"		"7451733635603225453"
-			"timeupdated"		"1681237109"
-			"timetouched"		"1681382383"
-			"subscribedby"		"1475870111"
-		}
-		"2908652819"
-		{
-			"manifest"		"2112617010329462927"
-			"timeupdated"		"1681199015"
-			"timetouched"		"1681382383"
-			"subscribedby"		"1475870111"
-		}
-	}
+	"Version"		"0"
+	"VendorID"		"4318"
+	"DeviceID"		"10118"
+	"setting.cpu_level"		"2"
+	"setting.mem_level"		"2"
+	"setting.gpu_mem_level"		"2"
+	"setting.defaultres"		"1920"
+	"setting.defaultresheight"		"1080"
+	"setting.gpu_level"		"3"
+	"setting.version"		"1"
+	"setting.knowndevice"		"0"
+	"setting.refreshrate_numerator"		"0"
+	"setting.refreshrate_denominator"		"0"
+	"setting.fullscreen"		"0"
+	"setting.coop_fullscreen"		"0"
+	"setting.nowindowborder"		"1"
+	"setting.mat_vsync"		"0"
+	"setting.fullscreen_min_on_focus_loss"		"1"
+	"setting.high_dpi"		"0"
+	"setting.cl_particle_fallback_base"		"2"
+	"setting.cl_particle_fallback_multiplier"		"0.000000"
+	"setting.dota_cheap_water"		"true"
+	"setting.r_deferred_height_fog"		"true"
+	"setting.r_deferred_simple_light"		"1"
+	"setting.r_ssao"		"false"
+	"setting.cl_globallight_shadow_mode"		"2"
+	"setting.r_dota_fxaa"		"false"
+	"setting.r_deferred_additive_pass"		"true"
+	"setting.dota_portrait_animate"		"true"
+	"setting.r_deferred_specular_bloom"		"false"
+	"setting.r_deferred_specular"		"false"
+	"setting.dota_ambient_creatures"		"false"
+	"setting.dota_ambient_cloth"		"false"
+	"setting.r_texture_stream_mip_bias"		"1"
+	"setting.r_dota_normal_maps"		"false"
+	"setting.r_dashboard_render_quality"		"false"
+	"setting.shaderquality"		"1"
+	"setting.recommendedheight"		"800"
+	"setting.r_grass_quality"		"0"
+	"setting.r_dota_allow_wind_on_trees"		"true"
+	"setting.r_dota_allow_parallax_mapping"		"false"
+	"setting.r_dota_bloom_compute_shader"		"0"
+	"setting.r_depth_of_field"		"1"
+	"setting.mat_viewportscale"		"0.740741"
+	"setting.r_fullscreen_gamma"		"2.200000"
+	"setting.r_dota_fsr_upsample"		"2"
+	"setting.r_low_latency"		"1"
+	"setting.useadvanced"		"0"
 }
