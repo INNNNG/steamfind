@@ -1,6 +1,6 @@
 {
    "account_id_migration_state": 2,
-   "account_tracker_service_last_update": "13330625892813673",
+   "account_tracker_service_last_update": "13330626396312628",
    "alternate_error_pages": {
       "backup": true
    },
@@ -16,7 +16,7 @@
    "browser": {
       "autorun_startup_plus_cv": 3,
       "autorun_startup_plus_enable": true,
-      "autorun_startup_plus_slt": 1686152302,
+      "autorun_startup_plus_slt": 1686152806,
       "check_default_browser_satrt": false,
       "clear_old_version_jijian_pref": false,
       "ees": {
@@ -34,11 +34,11 @@
       "show_tab_manager_button": false,
       "toolbox_switcher_guide_shown_1": true,
       "window_placement": {
-         "bottom": 1482,
-         "left": 558,
+         "bottom": 1479,
+         "left": 219,
          "maximized": false,
-         "right": 1948,
-         "top": 102,
+         "right": 1609,
+         "top": 99,
          "work_area_bottom": 1400,
          "work_area_left": 0,
          "work_area_right": 2560,
@@ -49,7 +49,7 @@
    "data_reduction": {
       "this_week_number": 2787,
       "this_week_services_downstream_foreground_kb": {
-         "77012883": 169
+         "77012883": 1
       }
    },
    "default_search_provider": {
@@ -61,7 +61,7 @@
          "contextual_search_url": "",
          "created_by_policy": false,
          "created_from_play_api": false,
-         "date_created": "13330625892725282",
+         "date_created": "13330626396252413",
          "doodle_url": "",
          "favicon_url": "https://www.baidu.com/favicon.ico",
          "id": "9",
@@ -69,7 +69,7 @@
          "image_url_post_params": "",
          "input_encodings": [  ],
          "keyword": "bd",
-         "last_modified": "13330625892725282",
+         "last_modified": "13330626396252413",
          "last_visited": "0",
          "logo_url": "",
          "new_tab_url": "",
@@ -87,22 +87,10 @@
       }
    },
    "domain_diversity": {
-      "last_reporting_timestamp": "13330625892806518"
+      "last_reporting_timestamp": "13330626396309495"
    },
    "download": {
-      "directory_upgrade": true,
-      "downloaded_turm_on_sound": false,
-      "keep_open_directly_file": false,
-      "openwith_360zip": false,
-      "prompt_for_download": false,
-      "use_last_dir": 0,
-      "use_thunder_p2sp_download": false
-   },
-   "ee": {
-      "browser": {
-         "bd_ws_en": true,
-         "bd_ws_tn": "62095104_5_oem_dg"
-      }
+      "directory_upgrade": true
    },
    "extensions": {
       "alerts": {
@@ -113,9 +101,6 @@
             "active": true,
             "entry": "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html"
          } ]
-      },
-      "garbagecollect": {
-         "lasttime": "13330625922730407"
       },
       "last_chrome_version": "21.0.1180.0",
       "settings": {
@@ -137,7 +122,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13330625892728405",
+            "install_time": "13330626396256472",
             "location": 5,
             "manifest": {
                "app": {
@@ -186,7 +171,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13330625892728007",
+            "install_time": "13330626396256079",
             "location": 5,
             "manifest": {
                "chrome_url_overrides": {
@@ -233,7 +218,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13330625892728934",
+            "install_time": "13330626396257068",
             "location": 5,
             "manifest": {
                "background": {
@@ -281,7 +266,7 @@
             "incognito_preferences": {
 
             },
-            "install_time": "13330625892728658",
+            "install_time": "13330626396256760",
             "location": 5,
             "manifest": {
                "content_security_policy": "script-src 'self' 'wasm-eval' blob: filesystem: chrome://resources; object-src * blob: externalfile: file: filesystem: data:; plugin-types application/x-google-chrome-pdf",
@@ -313,7 +298,7 @@
    },
    "google": {
       "services": {
-         "signin_scoped_device_id": "3497459c-4947-435d-b80f-b68f96334f03"
+         "signin_scoped_device_id": "74417456-a652-40b2-8183-6893a54b39be"
       }
    },
    "homepage_is_newtabpage": false,
@@ -321,18 +306,16 @@
       "selected_languages": "zh-CN,zh"
    },
    "locationbar": {
-      "autocomplete_with_360recommended": false,
-      "enable_inline_autocomplete": false,
       "show_copypastehelper": false
    },
    "media": {
-      "device_id_salt": "00C7EF0C78BE933C78CD5764FB23FD24",
+      "device_id_salt": "785ACB10213F3BDB5F02CEDBD0CA079C",
       "engagement": {
          "schema_version": 4
       }
    },
    "media_router": {
-      "receiver_id_hash_token": "nerYmWX1VdMqMF80RgU2nja8TKPeq3BbSLxAFDCJAdGNgeW2dtu1IBxivAanAiCKrKM3R+LAKNyi398BDwvCdg=="
+      "receiver_id_hash_token": "YrIi6jou7rCA3wpr7bCZwHRAHEu9dNYJocD6d3FHgqg52h80ZFR/IQflqEs7JsHp+ZfCluA7XzYhOVQbthKVqg=="
    },
    "ntp": {
       "num_personal_suggestions": 8,
@@ -505,61 +488,61 @@
             "popups": {
                "[*.]99bill.com,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722273",
+                  "last_modified": "13330626396248950",
                   "model": 0,
                   "setting": 1
                },
                "[*.]alipay.com,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722294",
+                  "last_modified": "13330626396248974",
                   "model": 0,
                   "setting": 1
                },
                "[*.]dangdang.com,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722308",
+                  "last_modified": "13330626396248983",
                   "model": 0,
                   "setting": 1
                },
                "[*.]ipos.10086.cn,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722259",
+                  "last_modified": "13330626396248937",
                   "model": 0,
                   "setting": 1
                },
                "[*.]netpay.sdo.com,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722236",
+                  "last_modified": "13330626396248910",
                   "model": 0,
                   "setting": 1
                },
                "[*.]pay.ips.com.cn,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722284",
+                  "last_modified": "13330626396248964",
                   "model": 0,
                   "setting": 1
                },
                "[*.]pay.soopay.net,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722278",
+                  "last_modified": "13330626396248959",
                   "model": 0,
                   "setting": 1
                },
                "[*.]payment.chinapnr.com,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722266",
+                  "last_modified": "13330626396248943",
                   "model": 0,
                   "setting": 1
                },
                "[*.]pingan.com,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722298",
+                  "last_modified": "13330626396248979",
                   "model": 0,
                   "setting": 1
                },
                "[*.]tenpay.com,*": {
                   "expiration": "0",
-                  "last_modified": "13330625892722289",
+                  "last_modified": "13330626396248969",
                   "model": 0,
                   "setting": 1
                }
@@ -588,10 +571,10 @@
             "site_engagement": {
                "https://www.baidu.com:443,*": {
                   "expiration": "0",
-                  "last_modified": "13330625893320990",
+                  "last_modified": "13330626396888789",
                   "model": 0,
                   "setting": {
-                     "lastEngagementTime": 1.3330625893320984e+16,
+                     "lastEngagementTime": 1.333062639688878e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.0,
                      "rawScore": 3.0
@@ -640,8 +623,7 @@
       "creation_time": "13330609379911147",
       "exit_type": "Crashed",
       "icon_version": 7,
-      "last_engagement_time": "13330625893320984",
-      "last_time_obsolete_http_credentials_removed": 1686152352.813643,
+      "last_engagement_time": "13330626396888781",
       "managed_user_id": "",
       "name": "”√ªß1",
       "password_manager_enabled": false,
@@ -649,8 +631,7 @@
 
       },
       "switch_mode_type": 1,
-      "use_native_zoom_level": true,
-      "were_old_google_logins_removed": true
+      "use_native_zoom_level": true
    },
    "safemonLockHomePage": 0,
    "safemon_lock_search": 0,
@@ -669,9 +650,7 @@
          "new_tab": {
             "show_bookmark_bar": false
          },
-         "popup_skip_scene": 43476,
-         "qd_url_m": "http://cloud.browser.360.cn/popup/info?channel=3&mid=",
-         "randnum": 75,
+         "randnum": 34,
          "randtime": "13330540800000000",
          "savepower_extensions": [  ],
          "sedarkmode": {
@@ -689,17 +668,17 @@
    "sessions": {
       "event_log": [ {
          "crashed": false,
-         "time": "13330625892726304",
+         "time": "13330626396254290",
          "type": 0
       }, {
          "errored_reading": false,
          "tab_count": 1,
-         "time": "13330625893228757",
+         "time": "13330626396706592",
          "type": 1,
          "window_count": 1
       }, {
-         "error_count": 124,
-         "time": "13330625895227843",
+         "error_count": 4,
+         "time": "13330626398755781",
          "type": 3,
          "unrecoverable_error_count": 0
       } ],
