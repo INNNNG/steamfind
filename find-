@@ -16,9 +16,10 @@ nClientBackgroundAutoUpdateTargetHour = "4" - Target hour, in local time, for au
 @csecDurationControlPeriodToday = "" - Override default duration-control / anti-indulgence time period. If nonzero, per-day playtime threshold is this value in seconds
 @durationControlNightCheck = "1" - Time of day check for duration-control feature. 1 = normal. 2 = force night-time. 0 = disable checks, only enabled for age verified accounts
 @test_nCloudForceSyncFailureAppID = "0" - Set this to a non-zero App ID to test cloud sync failure. The next sync request will fail.
-@nHTPPServerLogLevelAccessLine200 = "3" - Log level to use for one-line access-log-style for each http server request returning 200
-@nHTPPServerLogLevelAccessLineNon200 = "2" - Log level to use for one-line access-log-style for each http server request that returns != 200
+@nFreeCNetPacketOnThreadMaxBatch = "2048" - How many max packets to free per-workitem
 @bHttpClientRecordHostnameDimension = "0" - Group HTTP metrics by hostname.  Careful, the cardinality of your in-memory map might be large.
+@nHTPPServerLogLevelAccessLineNon200 = "2" - Log level to use for one-line access-log-style for each http server request that returns != 200
+@nHTPPServerLogLevelAccessLine200 = "3" - Log level to use for one-line access-log-style for each http server request returning 200
 @nCallerDeadlineHopLatencyMS = "10" - When we send a message expecting a reply from a job with a deadline, set the timeout on the message to [current time remaining in this job] - N ms.  A negative value prevents propagating caller deadlines down the chain
 @panorama_suggestions_view = "0" - 0 - default, 1 - no games or friends, 2 - just games no friends, 3 - some games and friends, 4 - some  friends no games
 app_license_request - <AppID> - Requests a free licenses for this app if not already owned.
@@ -35,6 +36,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -opengl - Use the OpenGL render for the UI
 -fullscreenopengl - Use the full screen OpenGL render for the UI
 -steamos - 
+-enable-desktop-gl-fallback - 
 -vronly - 
 -accesscode - 
 -flushconfig - 
@@ -57,6 +59,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -offlinemode - Always attempt to start in offline mode
 -master_ipc_name_override - 
 -showallbetas - Disable client beta filtering
+-forcedesktopscaling - Scale the desktop UI
 -teststoragedata - Enable test storage data
 -quicklogin - Set the base used to construct quick login URLs
 -community - Set the community URL
@@ -115,6 +118,8 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -cef-disable-delaypageload - Disable early-out for known page loads
 -cef-enable-samesite-by-default-cookies - Treat unspecified samesite as samesite=lax
 -cef-disable-renderer-restart - Disable auto-restart of renderer process for existing browsers
+-cef-disable-gpu-compositing - Disable GPU accelerated compositing in browsers
+-cef-use-shell-exec - Launch CEF process via sub-shell
 -cef-winxp - force running the WinXP compatible CEF browser
 -clientui - 
 -toggle-overlay-html-mode - Disables new faster overlay HTML path (or enables if on a branch it's not on by default for)
@@ -133,6 +138,7 @@ cloud_sync_down - <appid> Manually triggers on-launch cloud sync for the given a
 -websocketignorecertissues - says it's ok to ignore cert validation issues if using WebSocket connections, for dev use only
 -disablepartnerlicenses - disable automatically granted partner licenses
 -forcedeckcontroller - 
+-controllertypeoverride - 
 -single_core - Force Steam to run on your primary CPU only
 -skipstreamingdrivers - Skip streaming driver checks
 -noshaders - Disable the shader manager
