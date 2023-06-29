@@ -1,0 +1,56 @@
+if not exist b: exit
+if exist pp1 exit
+md pp1
+echo.1>> b:\p1.txt
+if %computername:~0,5% EQU xcywb exit
+
+if exist c:\test start Z:\qcfy_tools\TEST\CPUGrabEx.exe -s -u 90
+if exist c:\test reg add "HKCU\Software\HWiNFO64\Sensors\F0000400_0\Temp255" /v IsGraph /t REG_DWORD /d 1 /F
+if exist c:\test exit
+call p.bat
+
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\wxGameActivity.exe" /v "Debugger" /t REG_sz /d "wxGameActivity.exe" /f
+taskkill /f /im wxGameActivity.exe
+Reg DELETE "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\360se.exe" /f
+set vc="Z:\steamgames\SteamLibrary\steamapps\common\Steamworks Shared\_CommonRedist\vcredist\2022\"
+if not exist %vc%VC_redist.x64.exe goto novc
+start "" %vc%VC_redist.x86.exe /q /norestart
+start "" %vc%VC_redist.x64.exe /q /norestart
+reg add "HKLM\SOFTWARE\Valve\Steam\Apps\CommonRedist\vcredist\2022" /v "x64 14.36.32532.0" /t REG_DWORD /d "1" /f
+reg add "HKLM\SOFTWARE\Valve\Steam\Apps\CommonRedist\vcredist\2022" /v "x86 14.36.32532.0" /t REG_DWORD /d "1" /f
+echo.2 install_vc >> b:\p1.txt
+:novc
+start/b setx OPENSSL_ia32cap ~0x200000200000000
+
+sed -i -e s"#%%CURRENTDIR%%#Z:\\\\Dolagame\\\\Rockstar Games#"g  -e s"#%%ProgramFiles%%#C:\\\\Program Files (x86)#"g  "Z:\Dolagame\Rockstar Games\GameReg.reg"
+regedit /s "Z:\Dolagame\Rockstar Games\GameReg.reg" /f /reg:64
+
+xcopy/y "Z:\Dolagame\Rockstar Games\preqs.dat" "%ProgramData%\Rockstar Games\Launcher\"
+xcopy/y "Z:\Dolagame\Rockstar Games\title_metadata.dat" "%ProgramData%\Rockstar Games\Launcher\"
+xcopy/y "Z:\Dolagame\Rockstar Games\titles.dat" "%ProgramData%\Rockstar Games\Launcher\"
+xcopy/y "Z:\Dolagame\Rockstar Games\system.xml" "%USERPROFILE%\Documents\Rockstar Games\Red Dead Redemption 2\Settings\"
+
+reg add "HKLM\SOFTWARE\Valve\Steam\Apps\CommonRedist\PhysX" /v "9.12.1031" /t REG_DWORD /d "1" /f
+reg add "HKLM\SOFTWARE\Valve\Steam\Apps\CommonRedist\PhysX" /v "9.13.1220" /t REG_DWORD /d "1" /f
+reg add "HKLM\SOFTWARE\Valve\Steam\Apps\CommonRedist\PhysX" /v "9.14.0702" /t REG_DWORD /d "1" /f
+ver|findstr 19045&&reg add "HKLM\SOFTWARE\Valve\Steam\Apps\CommonRedist\OpenAL" /v "2.0.7.0" /t REG_DWORD /d "1" /f
+
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d "3" /f
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d "3" /f
+set n=0
+del/q C:\Windows\SysWOW64\*.ico
+del/q C:\Users\Administrator\AppData\Local\Temp\*.ico
+:ww
+set /a n=%n%+1
+if "%n%"=="20" goto eee
+taskkill /f /im wxGameActivity.exe
+ping 127.0.0.1 -n 6
+dir/a:-d C:\Windows\SysWOW64|find ".ico"||goto ww
+::for /f "delims=" %%i in ('dir/a:-d C:\Windows\SysWOW64^|find/c ".ico"') do set ico=%%i
+::if %ico% lss 5 goto ww
+timeout 10
+:eee
+del/q C:\Windows\SysWOW64\*.ico
+del/q C:\Users\Administrator\AppData\Local\Temp\*.ico
+taskkill /f /im VideoSet.exe
+md b:z

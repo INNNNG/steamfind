@@ -1,0 +1,26 @@
+{
+  "id": "lh-3227b8f086ee98bbb549887480b58da3",
+  "mac": "1c1b0d6ac96f0000",
+  "installOpt": {
+    "uploadSpeed": 10,
+    "downloadSpeed": 1000
+  },
+  "loginOpt": {
+    "scheme": 0,
+    "autoLogin": true,
+    "saveAccount": true
+  },
+  "quitAfterLaunched": true,
+  "language": "zhCN",
+  "serverHistory": {
+    "l22": [
+      ""
+    ]
+  },
+  "quitAfterClose": true,
+  "mediaOff": {
+    "audio": true,
+    "video": true
+  },
+  "l22.cloudGameBanTime": 1767794839552
+}

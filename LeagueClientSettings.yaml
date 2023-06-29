@@ -1,0 +1,4 @@
+install:
+    crash_reporting:
+        enabled: false
+        type: "none"
