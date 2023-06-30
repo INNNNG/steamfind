@@ -1,0 +1,322 @@
+if not exist b: exit
+if exist fff exit
+md fff
+echo.1>> b:\ff.txt
+::if exist b:\wbgj Wmic Process Where Name='explorer.exe' call Terminate
+::if exist b:\wbgj taskkill /f /im explorer*
+::if exist b:\wbgj start winx -winpe
+::if exist b:wbgj winx -code Screen:Set('rotation',1)&timeout 2&winx -code Screen:Set('rotation',0)
+ver|findstr "19043 22000 22621" &&start ..\y\SetDefaultAudio.exe 0 "扬声器"
+ver|findstr "19043 22000 22621" &&start ..\y\SetDefaultAudio.exe 1 "SG"
+ver|findstr "19043 22000 22621" &&start ..\y\SetDefaultAudio.exe 1 "USB"
+ver|findstr "19043 19045 22000 22621" &&start ..\TEST\wub\Wub.exe /d/p
+::ver|findstr "19043 22000 22621" &&powershell -c "Set-WinLanguageBarOption"
+::ver|findstr "17763"&& start/b powershell -c "Set-WinLanguageBarOption -UseLegacyLanguageBar"
+ver|findstr "19045 22000 22621" && start/b powershell -c "Set-WinLanguageBarOption -UseLegacySwitchMode"
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\userinit.exe" /v "Debugger" /t REG_sz /d "userinit.exe" /f
+md b:\f0
+for /f %%i in ('dir /a-d /b C:\Users\Administrator\AppData\Local') do pp %%i
+ver|findstr 7601 &&for /f "tokens=2" %%a in ('tasklist /FI "imagename eq rundll32.exe" /nh') do wmic process where processid=%%a|find "pDiDeviceInstallNotification"&&wmic process where processid=%%a call terminate 
+
+for /f "delims=" %%i in ('dir/b C:\Windows\SysWOW64 ^|findstr irwin') do (
+   del /Q C:\Windows\SysWOW64\%%i
+)
+for /f "delims=" %%i in ('dir/b C:\Windows\SysWOW64 ^|findstr game') do (
+   del /Q C:\Windows\SysWOW64\%%i
+)
+
+::ver|findstr 7601||taskkill /f /im NVDisplay*
+::ren hh hh.exe&start hh.exe
+
+taskkill /f /im _cri*
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\_cri1015.exe" /v "Debugger" /t REG_sz /d "_cri1015.exe" /f
+taskkill /f /im BugRpt.exe
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BugRpt.exe" /v "Debugger" /t REG_sz /d "BugRpt.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cri1013.exe" /v "Debugger" /t REG_sz /d "cri1013.exe" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\cri1000.exe" /v "Debugger" /t REG_sz /d "cri1000.exe" /f
+taskkill /f /im rmserver.exe 
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\rmserver.exe" /v "Debugger" /t REG_sz /d "rmserver.exe" /f
+taskkill /f /im BarR*
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BarRemoteSrv.exe" /v "Debugger" /t REG_sz /d "BarRemoteSrv.exe" /f
+taskkill /f /im HardwareInfo*
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\HardwareInfo.exe" /v "Debugger" /t REG_sz /d "HardwareInfo.exe" /f
+taskkill /f /im BarM*
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BarMonitor.exe" /v "Debugger" /t REG_sz /d "BarMonitor.exe" /f
+
+::start Z:\通用工具\360极速浏览器\360Chrome\Chrome\Application\360chrome.exe --make-default-browser
+::ver|findstr 7601 &&ren Z:\系统更新\都来米浏览器\123Browser 123%random% 
+cd /d Z:\通用工具\360极速浏览器X
+for /f "delims=" %%i in ('dir /ad /b *') do (
+   copy/Y z:\qcfy_tools\y\newtab.zip %%i\
+   copy/Y z:\qcfy_tools\y\errorpage.zip %%i\
+)
+ren "User Data\" %random%
+md "User Data\"
+echo.>"User Data\First Run"
+echo {"browser":{"enabled_labs_experiments":["overlay-scrollbars@1"],"last_welcomed_os_version": "10.0"}} >"User Data\Local State"
+md "User Data"\Default\Sessions
+echo {"browser":{"autorun_startup_plus_cv":3,"autorun_startup_plus_enable":false,"prefs_cloud_v":111111111,"toolbox_switcher_guide_shown_1":true,"check_default_browser_satrt":false,"clear_old_version_jijian_pref":false,"has_seen_welcome_page":false,"should_reset_check_default_browser":false,"show_bookmark_menubutton":false,"show_download_button":true,"show_extensions_bar_button":false,"show_home_button":false,"show_restore_webpage_button":false,"show_skin_button":false,"smart_pre_heat":false,"show_tab_manager_button":false,"window_placement":{"bottom":1390,"left":10,"maximized":false,"right":1400,"top":10}},"session":{"restore_on_startup":1},"default_search_provider":{"synced_guid":"d3595490-46e6-40c5-aa1b-759154d570f5"},"default_search_provider_data":{"template_url_data":{"favicon_url":"https://www.baidu.com/favicon.ico","keyword":"bd","short_name":"baidu","synced_guid":"d3595490-46e6-40c5-aa1b-759154d570f5","url":"https://www.baidu.com/s?wd={searchTerms}"}},"search_box":{"show":false},"download":{"directory_upgrade":false},"locationbar":{"show_copypastehelper":false},"se":{"browser":{"introx64":{"enable":false,"version":4},"auto_popup_login_last_time":"23305616474920626","close_last_tab_as_hao360":false,"close_last_tab_guide":false,"first_deal_bookmark":false,"login_wechat_tips":false,"new_tab":{"show_bookmark_bar":false}}},"homepage_is_newtabpage":false,"show_360avatar":false,"show_addressbar_suggest":false,"show_search_hotspot":false,"show_selection_search_bar":false,"autofill":{"enabled":false},"translate":{"enabled":false},"tab":{"close_last_tab_close_browser":false,"inactive_tab_hide_close_box":false},"profile":{"password_manager_enabled":false}}>"User Data"\Default\Preferences
+if not exist b:1440 start/b sed -i -e s#1390#1030# -e s#1400#1100# "User Data"\Default\Preferences
+copy/y z:\qcfy_tools\y\Session_1 "User Data"\Default\Sessions\
+echo y|cacls "User Data"\Default\Sessions /t /p Everyone:R
+
+Reg delete "HKCU\SOFTWARE\360ChromeX" /f 
+reg add HKCU\SOFTWARE\360ChromeX\Chrome /v firstjisu13jijianmenu /t reg_dword /d 0 /f
+reg add HKCU\SOFTWARE\360ChromeX\Chrome /v firstjisu13jijianskin /t reg_dword /d 0 /f
+reg add HKCU\SOFTWARE\360ChromeX\Chrome /v firstjisu13jijianskinex /t reg_dword /d 0 /f
+reg add HKCU\SOFTWARE\360ChromeX\Chrome /v noexperience /t reg_dword /d 1 /f
+reg add HKCU\SOFTWARE\360ChromeX\Chrome /v smart_preheat /t reg_dword /d 0 /f
+
+
+start Z:\通用工具\360极速浏览器X\360ChromeX.exe --make-default-browser
+if exist "C:\Program Files\Riot Vanguard" exit
+cd /d z:\通用工具\360极速浏览器\360Chrome\Chrome\Application
+for /f "delims=" %%i in ('dir /ad /b *') do (
+   copy/Y z:\qcfy_tools\y\newtab.zip %%i\*
+)
+ren ..\"User Data\" %random%
+md ..\"User Data\"
+echo.>..\"User Data\First Run"
+echo {"browser":{"enabled_labs_experiments":["overlay-scrollbars@1"]}} >..\"User Data\Local State"
+md ..\"User Data"\Default
+if not exist b:1440 echo {"browser":{"toolbox_switcher_guide_shown_1":true,"check_default_browser_satrt":false,"clear_old_version_jijian_pref":false,"has_seen_welcome_page":false,"should_reset_check_default_browser":false,"show_bookmark_menubutton":false,"show_download_button":true,"show_extensions_bar_button":false,"show_home_button":false,"show_restore_webpage_button":false,"show_skin_button":false,"show_tab_manager_button":false,"window_placement":{"bottom":1030,"left":10,"maximized":false,"right":955,"top":10}},"default_search_provider_data":{"template_url_data":{"alternate_urls":["https://www.baidu.com/s?ie={inputEncoding}&wd={searchTerms}","https://www.baidu.com/s?ie={inputEncoding}&word={searchTerms}","https://www.baidu.com/{google:pathWildcard}/s?ie={inputEncoding}&word={searchTerms}"],"contextual_search_url":"","date_created":"0","doodle_url":"","favicon_url":"https://www.baidu.com/favicon.ico","id":"4","image_url":"","image_url_post_params":"","input_encodings":["UTF-8"],"keyword":"baidu.com","last_modified":"0","logo_url":"","new_tab_url":"","originating_url":"","safe_for_autoreplace":true,"search_url_post_params":"","short_name":"Baidu","suggestions_url":"https://suggestion.baidu.com/su?wd={searchTerms}&action=opensearch&ie={inputEncoding}","suggestions_url_post_params":"","url":"https://www.baidu.com/s?wd={searchTerms}&ie={inputEncoding}","usage_count":0}},"se":{"browser":{"introx64":{"enable":false,"version":4},"auto_popup_login_last_time":"23305616474920626","close_last_tab_as_hao360":false,"close_last_tab_guide":false,"first_deal_bookmark":false,"login_wechat_tips":false,"new_tab":{"show_bookmark_bar":false}}},"homepage_is_newtabpage":false,"show_360avatar":false,"show_addressbar_suggest":false,"show_search_hotspot":false,"show_selection_search_bar":false,"autofill":{"enabled":false},"translate":{"enabled":false},"tab":{"close_last_tab_close_browser":false,"inactive_tab_hide_close_box":false},"profile":{"password_manager_enabled":false}} >..\"User Data"\Default\Preferences
+if exist b:1440 echo {"browser":{"toolbox_switcher_guide_shown_1":true,"check_default_browser_satrt":false,"clear_old_version_jijian_pref":false,"has_seen_welcome_page":false,"should_reset_check_default_browser":false,"show_bookmark_menubutton":false,"show_download_button":true,"show_extensions_bar_button":false,"show_home_button":false,"show_restore_webpage_button":false,"show_skin_button":false,"show_tab_manager_button":false,"window_placement":{"bottom":1390,"left":10,"maximized":false,"right":1275,"top":10}},"default_search_provider_data":{"template_url_data":{"alternate_urls":["https://www.baidu.com/s?ie={inputEncoding}&wd={searchTerms}","https://www.baidu.com/s?ie={inputEncoding}&word={searchTerms}","https://www.baidu.com/{google:pathWildcard}/s?ie={inputEncoding}&word={searchTerms}"],"contextual_search_url":"","date_created":"0","doodle_url":"","favicon_url":"https://www.baidu.com/favicon.ico","id":"4","image_url":"","image_url_post_params":"","input_encodings":["UTF-8"],"keyword":"baidu.com","last_modified":"0","logo_url":"","new_tab_url":"","originating_url":"","safe_for_autoreplace":true,"search_url_post_params":"","short_name":"Baidu","suggestions_url":"https://suggestion.baidu.com/su?wd={searchTerms}&action=opensearch&ie={inputEncoding}","suggestions_url_post_params":"","url":"https://www.baidu.com/s?wd={searchTerms}&ie={inputEncoding}","usage_count":0}},"se":{"browser":{"introx64":{"enable":false,"version":4},"auto_popup_login_last_time":"23305616474920626","close_last_tab_as_hao360":false,"close_last_tab_guide":false,"first_deal_bookmark":false,"login_wechat_tips":false,"new_tab":{"show_bookmark_bar":false}}},"homepage_is_newtabpage":false,"show_360avatar":false,"show_addressbar_suggest":false,"show_search_hotspot":false,"show_selection_search_bar":false,"autofill":{"enabled":false},"translate":{"enabled":false},"tab":{"close_last_tab_close_browser":false,"inactive_tab_hide_close_box":false},"profile":{"password_manager_enabled":false}} >..\"User Data"\Default\Preferences
+reg add HKCU\SOFTWARE\360Chrome\Chrome /v firstjisu13jijianmenu /t reg_dword /d 0 /f
+reg add HKCU\SOFTWARE\360Chrome\Chrome /v firstjisu13jijianskin /t reg_dword /d 0 /f
+reg add HKCU\SOFTWARE\360Chrome\Chrome /v firstjisu13jijianskinex /t reg_dword /d 0 /f
+reg add HKCU\SOFTWARE\360Chrome\Chrome /v noexperience /t reg_dword /d 1 /f
+reg add HKCU\SOFTWARE\360Chrome\Chrome /v smart_preheat /t reg_dword /d 0 /f
+reg add HKCU\SOFTWARE\360Chrome\default\ui_persist_value /v IsSearchNewStyle /t reg_dword /d 0 /f
+
+mklink/j "C:\Users\Administrator\AppData\Local\User Data" "Z:\通用工具\360极速浏览器\360Chrome\Chrome\User Data"
+ver|findstr 7601 &&copy/y 360chrome.exe doreadme.exe
+cd /d z:\qcfy_tools\y
+::ver|find "6.1"&&start cd.vbs
+dir/b Z:\steamgames\SteamLibrary\steamapps
+dir/b Z:\qcfy_tools\swy\st
+::ver|findstr 7601&&for /f "tokens=1" %%a in ('dir "C:\Users\Administrator\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar" /b') do type "C:\Users\Administrator\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\%%a" |find "Temp\n@" && for /f "tokens=1" %%b in ('dir "C:\Users\Administrator\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\%%a" /b') do start C:\Windows\Temp\syspin.exe "C:\Users\Administrator\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\%%b" 5387 2>nul
+
+goto b
+:pro
+timeout 10
+if exist b:\新建文件夹 goto b
+for /f "skip=1" %%a in ('wmic process where Name^="wxPubWinCltPlg.wxe" get ParentProcessId') do for /f "skip=1" %%b in ('wmic process where Name^="clsmn.exe" get ProcessId') do for /f "skip=1" %%c in ('wmic process where ParentProcessId^=%%b get ProcessId') do ( 
+if %%c neq %%a set fpp=%%c&goto a
+)
+:a
+echo.>b:\pp
+for /f %%x in ('wmic process where ParentProcessId^="%fpp%" get ProcessId') do echo.%%x >>b:\pp
+type b:\pp |find "ProcessId" ||goto pro
+echo.%fpp% >>b:\pp
+:b
+taskkill /f /im wxGameActivity.exe
+taskkill /f /im dinotify*
+taskkill /f /im lodctr*
+::ver|find "6.1"&&goto kk
+goto pw
+:kk
+Wmic Process Where Name='explorer.exe' call Terminate
+timeout 2
+start C:\Windows\explorer.exe
+timeout 1
+::start qcfy_ks.exe
+::timeout 8
+tskill /a ProcessExplorer*
+md b:\f7
+
+cd /d C:\Users\Administrator\AppData\Roaming 
+list %random%
+echo.>list
+
+:pw
+::start fake.vbs sysdiag-gui
+::pp CulClient326.exe
+::taskkill /f /im CulDeamon_Client.exe
+::for /f "skip=2 delims=" %%s in ('type b:\pp') do (pp %%s)
+
+if exist b:1440 sed -i -e s#85#270# qcfy_pan1.ahk
+if not exist b:1440 sed -i -e s#85#210# qcfy_pan1.ahk
+md b:\f1
+start ..\yxds\Data\vc\desktop\client\LoadDTClient.exe
+timeout 4
+
+::if %computername:~0,4% EQU TEST 
+if exist b:wbgj start qcfy_ks.exe qcfy_pan1.ahk
+if exist b:wbgj start z:\qcfy_tools\TEST\网吧管家侧边栏自动回缩.exe
+Reg Add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v HideFastUserSwitching /t REG_DWORD /d 1 /f
+::start fake.vbs ProcessExplorer64
+::start fake.vbs PowerTool64
+::start fake.vbs PCHunter
+fake.vbs leigod
+reg DELETE "HKCU\Software\Sysinternals\Process Explorer" /v "Windowplacement" /f
+rem 循环次数
+set num=5
+set n=0
+:pubwin
+taskkill /f /im rmserver.exe
+taskkill /f /im hundred.exe
+
+timeout 2
+::dir/a/b C:\Windows\SysWOW64\Log\|findstr User || goto pubwin
+::type C:\Windows\SysWOW64\Log\shzh* |findstr _ || goto pubwin
+set /a n=%n%+1
+
+setlocal enabledelayedexpansion 
+
+echo :pp>play.bat
+for /f "tokens=2 delims==" %%b in ('wmic process where Name^="clsmn.exe" get ProcessId/value ') do for /f "tokens=2 delims==" %%c in ('wmic process where ParentProcessId^=%%b get ProcessId/value') do (
+	echo %%c >b:\dsdsds
+	set ppa=%%c
+	for /f "tokens=2 delims==" %%d in ('wmic process where ParentProcessId^=%%c get ProcessId/value') do (
+		echo %%d|findstr [0-9] && echo taskkill /f /t /pid %%d >>play.bat 
+		set ppb=%%d 
+	)
+)
+
+type play.bat|find /c "kill"|findstr 3 &&goto endk
+type play.bat|find /c "kill"|findstr 4 &&goto endk
+timeout 3
+if "%n%"=="%num%" goto end
+goto pubwin
+:end
+
+
+for /f "tokens=2 delims==" %%s in ('wmic process where Name^="wxPubWinCltPlg.wxe" get ParentProcessId/value') do sed -i s#%%s#1# play.bat 
+for /f "tokens=2 delims==" %%s in ('wmic process where Name^="bmmotor.exe" get ProcessId/value') do sed -i s#%%s#1# play.bat 
+for /f "tokens=2 delims==" %%s in ('wmic process where Name^="BmRender.exe" get ProcessId/value') do sed -i s#%%s#1# play.bat 
+for /f "tokens=2" %%s in ('tasklist/NH /FI "WINDOWTITLE eq Pubwin OL"') do sed -i s#%%s#1# play.bat 
+timeout 12
+echo if exist C:\Users\Administrator\AppData\Roaming\Netease\UUNetbar\cards goto host >>play.bat
+echo if exist z:\qcfy_tools\XunYou\nodes.txt goto host >>play.bat
+echo copy/y C:\Windows\System32\drivers\etc\hosts1 C:\Windows\System32\drivers\etc\hosts >>play.bat
+echo :host >>play.bat
+echo timeout 5 >>play.bat
+echo del/q "C:\Program Files\Common Files\*.*" >>play.bat
+echo del/q "C:\Program Files\Common Files\lib\*.*" >>play.bat
+echo for /f "tokens=2 delims==" %%%%b in ('wmic process where Name^^="winlogon.exe" get ProcessId/value ') do wmic process where ParentProcessId^^=%%%%b get ProcessId ^>b:winlogon >>play.bat 
+echo timeout 5 >>play.bat
+echo for /f "skip=3" %%%%b in ('type b:\winlogon') do tasklist^|findstr %%%%b^|findstr explorer.^|^|pp %%%%b >>play.bat
+echo timeout 5 >>play.bat
+echo taskkill /f /im PopularizeProcess* >>play.bat
+echo start z:\qcfy_tools\TEST\nircmd.exe win hide title "网吧用户特权" >>play.bat
+echo pp %ppa%^|findstr suspended^|^|goto pp >>play.bat
+::echo if not exist b:zh start qcfy_ks1.exe qcfy_pan.ahk >>play.bat
+ver|findstr "7601 22621" ||echo start bat.vbs .\pl\pl.bat >>play.bat
+::echo timeout 10^&start C:\Windows\SysWOW64\callAdmin.exe >>play.bat
+echo md b:pan >>play.bat
+::echo reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\iexplore.exe" /f >>play.bat
+echo taskkill /f /t /pid %ppb% >>play.bat
+echo for /f %%%%a in ('wmic process where ParentProcessId^^=%ppa% get ProcessId ') do taskkill /F /PID %%%%a >>play.bat
+echo timeout 120^&pp %ppa% >>play.bat
+echo for /f %%%%a in ('wmic process where ParentProcessId^^=%ppa% get ProcessId ') do taskkill /F /PID %%%%a >>play.bat
+
+
+start play1.exe
+md b:\f3
+
+::if exist b:wbgj start qcfy_ks1.exe qcfy_pan.ahk
+timeout 6
+taskkill /f /im 网吧管家侧边栏自动回缩.exe
+
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmRender.exe" /v "Debugger" /t REG_sz /d "BmRender.exe" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmMotor.exe" /v "Debugger" /t REG_sz /d "z:\qcfy_tools\NF\Play.exe" /f
+echo "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmRender.exe" [2 8 19] >task.ini
+echo "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmMotor.exe" [2 8 19] >>task.ini
+echo HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband [2 8 19] >>task.ini
+regini task.ini
+if exist b:wbgja md b:wbgj
+if exist b:wbgj exit
+taskkill /f /im bmr*
+taskkill /f /im bmm*
+tasklist|find "Coo"&&echo. ||start z:\qcfy_tools\yxds\CoobarClt.exe
+exit
+
+
+
+:endk
+
+
+timeout 3
+for /f "tokens=2 delims==" %%s in ('wmic process where Name^="wxPubWinCltPlg.wxe" get ParentProcessId/value') do sed -i s#%%s#1# play.bat 
+for /f "tokens=2 delims==" %%s in ('wmic process where Name^="bmmotor.exe" get ProcessId/value') do sed -i s#%%s#1# play.bat 
+for /f "tokens=2 delims==" %%s in ('wmic process where Name^="BmRender.exe" get ProcessId/value') do sed -i s#%%s#1# play.bat 
+for /f "tokens=2" %%s in ('tasklist/NH /FI "WINDOWTITLE eq Pubwin OL"') do sed -i s#%%s#1# play.bat 
+timeout 12
+echo if exist C:\Users\Administrator\AppData\Roaming\Netease\UUNetbar\cards goto host >>play.bat
+echo if exist z:\qcfy_tools\XunYou\nodes.txt goto host >>play.bat
+echo copy/y C:\Windows\System32\drivers\etc\hosts1 C:\Windows\System32\drivers\etc\hosts >>play.bat
+echo :host >>play.bat
+echo timeout 5 >>play.bat
+echo del/q "C:\Program Files\Common Files\*.*" >>play.bat
+echo del/q "C:\Program Files\Common Files\lib\*.*" >>play.bat
+echo for /f "tokens=2 delims==" %%%%b in ('wmic process where Name^^="winlogon.exe" get ProcessId/value ') do wmic process where ParentProcessId^^=%%%%b get ProcessId ^>b:winlogon >>play.bat 
+echo timeout 5 >>play.bat
+echo for /f "skip=3" %%%%b in ('type b:\winlogon') do tasklist^|findstr %%%%b^|findstr explorer.^|^|pp %%%%b >>play.bat
+echo timeout 5 >>play.bat
+echo taskkill /f /im PopularizeProcess* >>play.bat
+echo start z:\qcfy_tools\TEST\nircmd.exe win hide title "网吧用户特权" >>play.bat
+echo pp %ppa%^|findstr suspended^|^|goto pp >>play.bat
+::echo if not exist b:zh start qcfy_ks1.exe qcfy_pan.ahk >>play.bat
+ver|findstr "7601 22621" ||echo start bat.vbs .\pl\pl.bat >>play.bat
+::echo timeout 10^&start C:\Windows\SysWOW64\callAdmin.exe >>play.bat
+echo md b:pan >>play.bat
+::echo reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\iexplore.exe" /f >>play.bat
+echo taskkill /f /t /pid %ppb% >>play.bat
+echo for /f %%%%a in ('wmic process where ParentProcessId^^=%ppa% get ProcessId ') do taskkill /F /PID %%%%a >>play.bat
+echo timeout 120^&pp %ppa% >>play.bat
+echo for /f %%%%a in ('wmic process where ParentProcessId^^=%ppa% get ProcessId ') do taskkill /F /PID %%%%a >>play.bat
+
+start play1.exe
+
+md b:\f2
+
+::if exist b:wbgj start qcfy_ks1.exe qcfy_pan.ahk
+timeout 6
+taskkill /f /im 网吧管家侧边栏自动回缩.exe
+
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmRender.exe" /v "Debugger" /t REG_sz /d "BmRender.exe" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmMotor.exe" /v "Debugger" /t REG_sz /d "b:BmMotor1.exe" /f
+echo "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmRender.exe" [2 8 19] >task.ini
+echo "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\BmMotor.exe" [2 8 19] >>task.ini
+echo HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband [2 8 19] >>task.ini
+regini task.ini
+if exist b:wbgja md b:wbgj
+if exist b:wbgj exit
+taskkill /f /im bmr*
+taskkill /f /im bmm*
+tasklist|find "Coo"&&echo. ||start z:\qcfy_tools\yxds\CoobarClt.exe
+exit
+timeout 80
+timeout 400
+exit
+reg DELETE "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\iphlpsvc\Parameters\ProxyMgr" /f
+reg add "HKEY_USERS\S-1-5-21-3259462816-403318513-4096152784-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v "AutoConfigURL" /d "" /f
+reg add "HKEY_USERS\S-1-5-21-3259462816-403318513-4096152784-500\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v "ProxyEnable" /t REG_DWORD /d 0 /f
+
+
+
+:gb
+for /f "tokens=5 delims= " %%w in ('netstat -aon^|findstr 0:49666^|findstr LISTENING') do set dd=%%w
+for /f "tokens=2 delims==" %%d in ('wmic process where ParentProcessId^=%dd% get ProcessId/value') do set tt=%%d
+for /f "tokens=2 delims==" %%e in ('wmic process where ParentProcessId^=%tt% get ProcessId/value') do set ee=%%e
+Taskkill /pid %tt% /t
+goto:eof
+
+
+::echo for /f "tokens=2 delims==" %%%%b in ('wmic process where Name^^="CulClient326.exe" get ProcessId/value ') do wmic process where ParentProcessId^^=%%%%b get ProcessId ^>b:cul >>play.bat
+::echo timeout 5^&pp %ppa% >>play.bat
+::echo for /f "skip=1" %%%%b in ('type b:\cul') do tasklist^|findstr %%%%b^|findstr cmd.^|^|pp %%%%b >>play.bat
+
+if not exist b:wbgj Wmic Process Where Name='explorer.exe' call Terminate
+timeout 2
+if not exist b:wbgj start C:\Windows\explorer.exe
+timeout 3
+start qcfy_ks.exe
+sc config PolicyAgent start=auto&&sc start PolicyAgent 
+timeout 3
+Netsh ipsec static add policy name = xy
+Netsh ipsec static add filteraction name = xy action = block
+Netsh ipsec static add filterlist name = xy
+Netsh ipsec static add filter filterlist = xy srcaddr = 36.150.158.78 dstaddr = any dstport = 0 protocol = any mirrored = yes
+Netsh ipsec static add rule name = xy Policy = xy filterlist = xy filteraction = xy
+netsh ipsec static set policy name = xy assign = y 
