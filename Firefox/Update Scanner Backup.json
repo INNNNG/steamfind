@@ -1,0 +1,66 @@
+{
+  "id": "https://github.com/sneakypete81/updatescanner/@JSON_BACKUP_ID",
+  "version": 1,
+  "data": {
+    "type": "PageFolder",
+    "title": "root",
+    "children": [
+      {
+        "type": "Page",
+        "title": "SteamClientBeta",
+        "url": "https://steamcommunity-a.akamaihd.net/groups/SteamClientBeta/announcements?client_view=1",
+        "scanRateMinutes": 60,
+        "changeThreshold": 10,
+        "ignoreNumbers": false,
+        "encoding": "UTF-8",
+        "highlightChanges": true,
+        "highlightColour": "#ffff66",
+        "markChanges": false,
+        "doPost": false,
+        "postParams": null
+      },
+      {
+        "type": "Page",
+        "title": "steambeta",
+        "url": "https://store.st.dl.eccdnx.com/events/ajaxgetadjacentpartnerevents/?appid=1675200&count_after=3&lang_list=6_7&event_type_filter=&origin=https:%2F%2Fsteamloopback.host",
+        "scanRateMinutes": 60,
+        "changeThreshold": 100,
+        "ignoreNumbers": false,
+        "encoding": "utf-8",
+        "highlightChanges": true,
+        "highlightColour": "#ffff66",
+        "markChanges": false,
+        "doPost": false,
+        "postParams": null
+      },
+      {
+        "type": "Page",
+        "title": "SteamClient",
+        "url": "https://store.st.dl.eccdnx.com/events/ajaxgetadjacentpartnerevents/?appid=593110&count_after=2&lang_list=6_7&event_type_filter=&origin=https:%2F%2Fsteamloopback.host",
+        "scanRateMinutes": 60,
+        "changeThreshold": 100,
+        "ignoreNumbers": false,
+        "encoding": "utf-8",
+        "highlightChanges": true,
+        "highlightColour": "#ffff66",
+        "markChanges": false,
+        "doPost": false,
+        "postParams": null
+      },
+      {
+        "type": "Page",
+        "title": "pubwin",
+        "url": "http://download.pubwinol.com/download",
+        "scanRateMinutes": 1440,
+        "changeThreshold": 100,
+        "ignoreNumbers": false,
+        "encoding": "utf-8",
+        "highlightChanges": true,
+        "highlightColour": "#ffff66",
+        "markChanges": false,
+        "doPost": false,
+        "postParams": null
+      }
+    ]
+  }
+}
